@@ -1,8 +1,8 @@
 .DS_Store
 prototype/.DS_Store
 prototype/css/.DS_Store
-assets/
-Referensi/
+web-assets/
+other-assets/
 *.sublime-project
 *.sublime-workspace
 *.codekit
