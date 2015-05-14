@@ -2,3 +2,6 @@
 prototype/.DS_Store
 prototype/css/.DS_Store
 assets/
+*.sublime-project
+*.sublime-workspace
+*.codekit

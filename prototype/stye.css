@@ -1,0 +1,10 @@
+nav.top-bar {
+text-align:center;
+}
+section.top-bar-section {
+display: inline-block;
+}		
+
+#header-row {
+	margin-top: 1em;
+}
