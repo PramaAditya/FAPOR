@@ -6762,14 +6762,6 @@ body {
   background-attachment: fixed;
 }
 /* PINGENDO COMMENT DO NOT REMOVE */
-#footer a {
-  color: #ffffff;
-}
-#subfooter a,
-#subfooter a:hover,
-#subfooter a:focus {
-  text-decoration: underline;
-}
-img#logo-footer {
-  margin-bottom: 1em;
+.breadcrumb .petunjuk {
+  margin-right: .7em;
 }
