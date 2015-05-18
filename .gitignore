@@ -3,6 +3,7 @@ prototype/.DS_Store
 prototype/css/.DS_Store
 web-assets/
 other-assets/
+lain-lain/
 *.sublime-project
 *.sublime-workspace
 *.codekit
