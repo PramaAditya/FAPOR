@@ -32,11 +32,11 @@
 │   │   ├── pingendo-theme.css
 │   │   └── pingendo-theme.css.map
 │   ├── fonts
-│	│   ├── glyphicons-halflings-regular.eot
-│	│   ├── glyphicons-halflings-regular.svg
-│	│   ├── glyphicons-halflings-regular.ttf
-│	│   ├── glyphicons-halflings-regular.woff
-│	│   └── glyphicons-halflings-regular.woff2
+│   │   ├── glyphicons-halflings-regular.eot
+│   │   ├── glyphicons-halflings-regular.svg
+│   │   ├── glyphicons-halflings-regular.ttf
+│   │   ├── glyphicons-halflings-regular.woff
+│   │   └── glyphicons-halflings-regular.woff2
 │   ├── js
 │   │   ├── bootstrap.js
 │   │   ├── bootstrap.min.js
