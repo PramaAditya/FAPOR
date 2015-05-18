@@ -6682,6 +6682,10 @@ button.close {
   padding-left: 0;
   padding-right: 15px;
 }
+.jasny .navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
 .navmenu,
 .navbar-offcanvas {
   width: 300px;
@@ -7173,3 +7177,4 @@ button.close {
 img#logo-footer {
   margin-bottom: 1em;
 }
+/*# sourceMappingURL=bootstrap.css.map */
