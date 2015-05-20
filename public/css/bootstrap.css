@@ -4581,7 +4581,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: inline-block;
 }
 .breadcrumb > li + li:before {
-  content: "/\00a0";
+  content: ">\00a0";
   padding: 0 5px;
   color: #cccccc;
 }
@@ -7177,4 +7177,14 @@ button.close {
 img#logo-footer {
   margin-bottom: 1em;
 }
+#Hello {
+  color: #90d2ff;
+}
+.row .col-md-6 h2 {
+  color: #b9e3ff;
+}
+.row .col-md-6 h1 {
+  color: #0098ff;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
