@@ -1,4 +1,10 @@
+
 .btn{
-	border-radius: 13px 0px 13px 0px;
+	@button-largest-radius: 13px;
+	@button-smallest-radius: 2px;
+	border-radius: @button-largest-radius @button-smallest-radius;
 	font-family: "Offside",@font-family-sans-serif;
+	&.btn-sm{
+		border-radius: 10px @button-smallest-radius;
+	}
 }
