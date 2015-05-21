@@ -1,0 +1,15 @@
+.nav-pills {
+    li {
+    	a {
+            display: block !important;
+        }
+        &:not(.active) {
+            a {
+                .sweep-to-right();
+            }
+        }
+		&.active{
+			font-size: 1.5em;
+		}
+    }
+}

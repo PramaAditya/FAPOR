@@ -3971,7 +3971,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
 }
 .nav-pills > li > a {
-  border-radius: 4px;
+  border-radius: 2px 2px 13px 2px;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -3980,7 +3980,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #0098ff;
+  background-color: #efba00;
 }
 .nav-stacked > li {
   float: none;
@@ -8457,7 +8457,7 @@ button.close {
 .hvr-fade:hover,
 .hvr-fade:focus,
 .hvr-fade:active {
-  background-color: #2098d1;
+  background-color: #0098ff;
   color: white;
 }
 /* Back Pulse */
@@ -8499,6 +8499,7 @@ button.close {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  background-color: #0098ff;
   background-color: #2098d1;
   color: white;
 }
@@ -8526,7 +8527,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -8573,7 +8574,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 100% 50%;
@@ -8620,7 +8621,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -8667,7 +8668,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -8714,7 +8715,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -8763,7 +8764,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 100% 50%;
@@ -8812,7 +8813,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -8861,7 +8862,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -8912,7 +8913,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   border-radius: 100%;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -8946,7 +8947,7 @@ button.close {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -8993,7 +8994,7 @@ button.close {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -9053,7 +9054,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -9085,7 +9086,7 @@ button.close {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -9147,7 +9148,7 @@ button.close {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 50%;
@@ -9181,7 +9182,7 @@ button.close {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -9243,7 +9244,7 @@ button.close {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #2098d1;
+  background: #0098ff;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50%;
@@ -9287,7 +9288,7 @@ button.close {
 .hvr-border-fade:hover,
 .hvr-border-fade:focus,
 .hvr-border-fade:active {
-  box-shadow: inset 0 0 0 4px #2098d1, 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 0 4px #0098ff, 0 0 1px rgba(0, 0, 0, 0);
   /* Hack to improve aliasing on mobile/tablet devices */
 }
 /* Hollow */
@@ -9547,7 +9548,7 @@ button.close {
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   height: 4px;
   -webkit-transition-property: "right";
   transition-property: "right";
@@ -9581,7 +9582,7 @@ button.close {
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   height: 4px;
   -webkit-transition-property: "left, right";
   transition-property: "left, right";
@@ -9616,7 +9617,7 @@ button.close {
   left: 100%;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   height: 4px;
   -webkit-transition-property: "left";
   transition-property: "left";
@@ -9650,7 +9651,7 @@ button.close {
   left: 0;
   right: 100%;
   top: 0;
-  background: #2098d1;
+  background: #0098ff;
   height: 4px;
   -webkit-transition-property: "right";
   transition-property: "right";
@@ -9684,7 +9685,7 @@ button.close {
   left: 50%;
   right: 50%;
   top: 0;
-  background: #2098d1;
+  background: #0098ff;
   height: 4px;
   -webkit-transition-property: "left, right";
   transition-property: "left, right";
@@ -9719,7 +9720,7 @@ button.close {
   left: 100%;
   right: 0;
   top: 0;
-  background: #2098d1;
+  background: #0098ff;
   height: 4px;
   -webkit-transition-property: "left";
   transition-property: "left";
@@ -9754,7 +9755,7 @@ button.close {
   right: 0;
   top: 0;
   bottom: 0;
-  border-color: #2098d1;
+  border-color: #0098ff;
   border-style: solid;
   border-width: 0;
   -webkit-transition-property: border-width;
@@ -9791,7 +9792,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098d1;
+  background: #0098ff;
   height: 4px;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
@@ -9828,7 +9829,7 @@ button.close {
   left: 0;
   right: 0;
   top: 0;
-  background: #2098d1;
+  background: #0098ff;
   height: 4px;
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px);
@@ -12114,5 +12115,57 @@ blockquote {
 }
 .btn.btn-sm {
   border-radius: 10px 2px;
+}
+.nav-pills li a {
+  display: block !important;
+}
+.nav-pills li:not(.active) a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.nav-pills li:not(.active) a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0098ff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.nav-pills li:not(.active) a:hover,
+.nav-pills li:not(.active) a:focus,
+.nav-pills li:not(.active) a:active {
+  color: white;
+}
+.nav-pills li:not(.active) a:hover:before,
+.nav-pills li:not(.active) a:focus:before,
+.nav-pills li:not(.active) a:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.nav-pills li.active {
+  font-size: 1.5em;
 }
 /*# sourceMappingURL=bootstrap.css.map */
