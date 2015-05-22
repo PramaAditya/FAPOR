@@ -3971,7 +3971,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
 }
 .nav-pills > li > a {
-  border-radius: 2px 2px 13px 2px;
+  border-radius: 0;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -3979,8 +3979,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #ffffff;
-  background-color: #efba00;
+  color: #0098ff;
+  background-color: #ffffff;
 }
 .nav-stacked > li {
   float: none;
@@ -12166,6 +12166,10 @@ blockquote {
   transform: scaleX(1);
 }
 .nav-pills li.active {
-  font-size: 1.5em;
+  border-style: solid;
+  border-width: 0;
+  border-left-width: 0.4em;
+  border-color: #0098ff;
+  font-size: 1.7em;
 }
 /*# sourceMappingURL=bootstrap.css.map */
