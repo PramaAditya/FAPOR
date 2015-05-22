@@ -1,0 +1,20 @@
+.nav-pills {
+    li {
+    	a {
+            display: block !important;
+        }
+        &:not(.active) {
+            a {
+               // .sweep-to-right();
+            }
+        }
+		&.active{
+			border-style: solid;
+			border-width: 0;
+			border-left-width: 0.4em;
+			border-color: @warna-4;//@nav-pills-active-link-hover-color;
+			font-size: 1.7em;
+		}
+    }
+}
+
