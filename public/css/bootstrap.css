@@ -12015,14 +12015,17 @@ button.close {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .content {
-  margin-top: 3em;
+  padding: 3em;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .page-tabs .nav-tabs {
     margin-bottom: 1em;
   }
+  .page-tabs .nav-tabs li {
+    margin-top: 0.5em;
+  }
   .page-tabs .nav-tabs li a {
-    border-radius: 13px 2px;
+    border-radius: 13px 2px !important;
   }
 }
 #footer a {

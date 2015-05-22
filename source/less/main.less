@@ -25,15 +25,16 @@
                 
                 zoom: 1;
                 /* hasLayout ie7 trigger */
-                a{
-                	border:0;
-                	border-radius:@border-largest-radius @border-smallest-radius 0  @border-smallest-radius;
+                
+                a {
+                    border: 0;
+                    border-radius: @border-largest-radius @border-smallest-radius 0 @border-smallest-radius;
                 }
             }
             > li:not(.active) {
                 a {
                     color: white;
-                    &:hover,&:focus {
+                    &:hover, &:focus {
                         background-color: rgba(255, 255, 255, 0.3);
                     }
                 }
@@ -43,16 +44,20 @@
 }
 
 .content {
-    margin-top: 3em;
+    padding: 3em;
+
 }
 
-@media (max-width: @screen-md) {
+@media (max-width: @screen-lg) {
     .page-tabs {
-    .nav-tabs{
-    	margin-bottom: 1em;
-    	li a{
-    		border-radius:@border-leaf;
-    	}
-    }
+        .nav-tabs {
+            margin-bottom: 1em;
+            li {
+            	margin-top: 0.5em;
+                a {
+                    border-radius: @border-leaf!important;
+                }
+            }
+        }
     }
 }
