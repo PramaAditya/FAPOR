@@ -1,46 +1,36 @@
 @tinggi-kotak: @box-height;
-
 .kotak-section {
     .make-row();
     padding: 0px;
     margin: 0px;
-}
-
-.col {
-    display: block;
-    float: left;
-    //margin: 1% 0 1% 0%;
-}
-
-.col:first-child {
-    margin-left: 0;
-}
-
-.span_1_of_2 {
-    .make-md-column(6);
-    padding: 0;
-    height: @tinggi-kotak;
-    background-color: @warna-3;
-}
-
-.kotak-container {
-    .make-row();
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.kotak-row {
-    .make-row(0);
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.kotak-md-6 {
-    .make-md-column(6, 0);
-    position: relative;
-    min-height: 1px;
-    padding-left: 0px;
-    padding-right: 0px;
-    height: @tinggi-kotak/2;
-    background-color: @warna-4;
+    margin-top: 1em;
+    .kotak-container {
+        .make-row();
+        margin-right: auto;
+        margin-left: auto;
+        .hidden-xs;
+        .span_1_of_2 {
+            .make-md-column(6);
+            .make-xs-column(12);
+            padding: 0;
+            height: @tinggi-kotak;
+            background-color: @warna-3;
+            display: block;
+            float: left;
+            .kotak-row {
+                .make-row(0);
+                margin-left: 0px;
+                margin-right: 0px;
+                .kotak-md-6 {
+                    .make-sm-column(6, 0);
+                    position: relative;
+                    min-height: 1px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    height: @tinggi-kotak/2;
+                    background-color: @warna-4;
+                }
+            }
+        }
+    }
 }
