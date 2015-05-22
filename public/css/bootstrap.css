@@ -11969,6 +11969,31 @@ button.close {
   width: 25px;
   height: 25px;
 }
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ * 
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
 #title {
   background-color: #e19400;
   background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
@@ -11979,6 +12004,9 @@ button.close {
   color: white;
   margin-top: 1.35em;
   margin-bottom: 0.5em;
+}
+#header-placeholder {
+  display: inline-block;
 }
 .page-tabs {
   margin-left: -15px;
@@ -12185,7 +12213,6 @@ blockquote {
   background-color: white;
 }
 .btn {
-  background-image: url(http://www.transparenttextures.com/patterns/diagonal-striped-brick.png);
   border-radius: 13px 2px;
   font-family: "Offside", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
