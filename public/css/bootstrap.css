@@ -12016,7 +12016,7 @@ button.close {
 }
 #header-placeholder {
   display: inline-block;
-  margin-top: 23px;
+  margin-top: 24px;
 }
 .page-tabs {
   margin-left: -15px;
@@ -12250,12 +12250,15 @@ blockquote {
   border-color: #efba00;
   font-size: 1.7em;
 }
+.kotak {
+  background-size: cover;
+}
 .kotak-section {
   margin-left: -15px;
   margin-right: -15px;
   padding: 0px;
   margin: 0px;
-  margin-top: 1em;
+  margin-top: 20px;
 }
 .kotak-section .kotak-container {
   margin-left: -15px;
@@ -12274,9 +12277,10 @@ blockquote {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
   height: 40em;
-  background-color: #0098ff;
   display: block;
   float: left;
 }
@@ -12300,7 +12304,6 @@ blockquote {
   padding-left: 0px;
   padding-right: 0px;
   height: 20em;
-  background-color: #efba00;
 }
 @media (min-width: 768px) {
   .kotak-section .kotak-container .kotak-big .kotak-row .kotak-small {
@@ -12308,38 +12311,40 @@ blockquote {
     width: 50%;
   }
 }
-.kotak-big {
-  text-align: center;
+.kotak-utama {
+  padding-top: 120px;
 }
-.kotak-big:hover .overlay {
+.kotak-utama:hover .overlay {
   opacity: 0.5;
+}
+.kotak-big {
+  background-size: cover;
+  text-align: center;
 }
 .kotak-big a.overlay {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #000080;
   opacity: 0.3;
   z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
 }
-.kotak-big .kotak-content {
-  padding-top: 15%;
-}
 .kotak-big .kotak-content * {
   position: relative;
 }
 .kotak-big .kotak-content .title {
-  line-height: 1.42857143;
-  margin-bottom: 7em;
-  color: white;
+  line-height: 60px;
+  margin-bottom: 160px;
+  margin-top: -10px;
+  color: #ffffff;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 .kotak-big .kotak-content .subtitle {
   font-size: 12px;
-  line-height: 1.42857143;
+  line-height: 2.42857143;
   margin-bottom: 0;
   color: white;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -12347,31 +12352,59 @@ blockquote {
   font-style: italic;
 }
 .kotak-big .kotak-content .cta {
-  float: none;
   padding: 0.8em 2em;
+}
+.kotak-big .kotak-content .cta:hover {
+  color: #000080;
 }
 .kotak-big a {
   color: white;
+}
+.kotak-small {
+  background-size: cover;
 }
 .kotak-small a.overlay {
   opacity: 0.3;
 }
 .kotak-small:hover .overlay {
-  opacity: 0.1;
+  opacity: 0.2;
 }
 .kotak-small .kotak-content {
-  background-color: black;
-  padding: 2em;
+  background-color: #000080;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 16px;
   bottom: 0;
   position: absolute;
   width: 100%;
+  height: 100px;
 }
 .kotak-small .kotak-content .title {
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.kotak-small .kotak-content .subtitle {
+  line-height: 1.42857143;
 }
 .kotak-small .kotak-content .subtitle a {
   color: #777777;
+}
+@media (max-width: 992px) {
+  .full-md {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .kotak-utama {
+    height: 20em !important;
+    padding-top: 2em;
+  }
+  .kotak-utama .title {
+    margin-bottom: 1.5em!important;
+  }
 }
 @keyframes ticker {
   0% {

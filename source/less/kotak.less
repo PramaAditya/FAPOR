@@ -1,9 +1,17 @@
-@tinggi-kotak: @box-height;
+@tinggi-kotak: @box-height; //variables.less
+@warna-overlay: @warna-1;
+@warna-kotak-kecil: @warna-1; //darken(@warna-3,30%);
+@warna-title: white;
+@warna-subtitle: @gray-light;
+.kotak {
+    background-size: cover;
+}
+
 .kotak-section {
     .make-row();
     padding: 0px;
     margin: 0px;
-    margin-top: 1em;
+    margin-top: @line-height-computed;
     .kotak-container {
         .make-row();
         margin-right: auto;
@@ -12,9 +20,11 @@
         .kotak-big {
             .make-md-column(6);
             .make-xs-column(12);
-            padding: 0;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
             height: @tinggi-kotak;
-            background-color: @warna-3;
+            //background-color: @warna-3;
             display: block;
             float: left;
             .kotak-row {
@@ -28,24 +38,32 @@
                     padding-left: 0px;
                     padding-right: 0px;
                     height: @tinggi-kotak/2;
-                    background-color: @warna-4;
+                    //background-color: @warna-4;
                 }
             }
         }
     }
 }
 
-.kotak-big {
-    text-align: center;
+.kotak-utama {
     &:hover {
         .overlay {
             opacity: 0.5;
         }
     }
+    padding-top: @line-height-computed*6;
+    // a.overlay{
+    //     background-color: @warna-kotak-kecil !important;
+    // }
+}
+
+.kotak-big {
+    .kotak;
+    text-align: center;
     a.overlay {
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: @warna-overlay;
         opacity: 0.3;
         z-index: 0;
         position: absolute;
@@ -53,20 +71,21 @@
         left: 0;
     }
     .kotak-content {
-        padding-top: 15%;
+        //padding-top: @line-height-computed*6; //pindah jadi paddingnya kotak-utama 
         * {
             position: relative;
         }
         .title {
-            line-height: @line-height-base;
-            margin-bottom: 7em;
-            color: white;
+            line-height: @line-height-computed+@font-size-h1+(@line-height-computed/5);
+            margin-bottom: @line-height-computed*8;
+            margin-top: -(@line-height-computed/2);
+            color: @warna-title;
             font-family: @font-family-sans-serif;
             font-weight: 700;
         }
         .subtitle {
             font-size: @font-size-h6;
-            line-height: @line-height-base;
+            line-height: @line-height-base+1;
             margin-bottom: 0;
             color: white;
             font-family: @font-family-sans-serif;
@@ -74,35 +93,64 @@
             font-style: italic;
         }
         .cta {
-            float: none;
+            //float: none;
             padding: 0.8em 2em;
+            &:hover {
+                color: @warna-1;
+            }
         }
     }
     a {
         color: white;
     }
 }
-.kotak-small{
-    a.overlay{
+
+.kotak-small {
+    .kotak;
+    a.overlay {
         opacity: 0.3;
     }
-    &:hover{
-        .overlay{
-            opacity:0.1;
+    &:hover {
+        .overlay {
+            opacity: 0.2;
         }
     }
-    .kotak-content{
-        background-color: black;
-        padding:2em;
-        bottom:0;
+    .kotak-content {
+        background-color: @warna-kotak-kecil;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 16px;
+        bottom: 0;
         position: absolute;
         width: 100%;
-        .title{
-            margin:0;
-            font-size: @font-size-h4;
+        height: @line-height-computed*5;
+        .title {
+            margin: 0;
+            font-size: @font-size-h5;
+            line-height: @line-height-base;
         }
-        .subtitle{
-            a{color:@gray-light};
+        .subtitle {
+            a {
+                color: @warna-subtitle;
+            }
+            line-height: @line-height-base;
+        }
+    }
+}
+
+@media (max-width:@screen-md) {
+    .full-md{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .kotak-utama{
+        height: @tinggi-kotak/2 !important;
+        padding-top: 2em;
+        .title{
+            margin-bottom: 1.5em!important;
         }
     }
 }
