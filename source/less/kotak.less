@@ -9,7 +9,7 @@
         margin-right: auto;
         margin-left: auto;
         .hidden-xs;
-        .span_1_of_2 {
+        .kotak-big {
             .make-md-column(6);
             .make-xs-column(12);
             padding: 0;
@@ -21,7 +21,7 @@
                 .make-row(0);
                 margin-left: 0px;
                 margin-right: 0px;
-                .kotak-md-6 {
+                .kotak-small {
                     .make-sm-column(6, 0);
                     position: relative;
                     min-height: 1px;
@@ -31,6 +31,78 @@
                     background-color: @warna-4;
                 }
             }
+        }
+    }
+}
+
+.kotak-big {
+    text-align: center;
+    &:hover {
+        .overlay {
+            opacity: 0.5;
+        }
+    }
+    a.overlay {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.3;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .kotak-content {
+        padding-top: 15%;
+        * {
+            position: relative;
+        }
+        .title {
+            line-height: @line-height-base;
+            margin-bottom: 7em;
+            color: white;
+            font-family: @font-family-sans-serif;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: @font-size-h6;
+            line-height: @line-height-base;
+            margin-bottom: 0;
+            color: white;
+            font-family: @font-family-sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .cta {
+            float: none;
+            padding: 0.8em 2em;
+        }
+    }
+    a {
+        color: white;
+    }
+}
+.kotak-small{
+    a.overlay{
+        opacity: 0.3;
+    }
+    &:hover{
+        .overlay{
+            opacity:0.1;
+        }
+    }
+    .kotak-content{
+        background-color: black;
+        padding:2em;
+        bottom:0;
+        position: absolute;
+        width: 100%;
+        .title{
+            margin:0;
+            font-size: @font-size-h4;
+        }
+        .subtitle{
+            a{color:@gray-light};
         }
     }
 }
