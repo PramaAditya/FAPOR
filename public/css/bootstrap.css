@@ -6285,7 +6285,13 @@ button.close {
 .modal-footer:before,
 .modal-footer:after,
 .page-tabs:before,
-.page-tabs:after {
+.page-tabs:after,
+.kotak-section:before,
+.kotak-section:after,
+.kotak-section .kotak-container:before,
+.kotak-section .kotak-container:after,
+.kotak-section .kotak-container .kotak-big .kotak-row:before,
+.kotak-section .kotak-container .kotak-big .kotak-row:after {
   content: " ";
   display: table;
 }
@@ -6304,7 +6310,10 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
-.page-tabs:after {
+.page-tabs:after,
+.kotak-section:after,
+.kotak-section .kotak-container:after,
+.kotak-section .kotak-container .kotak-big .kotak-row:after {
   clear: both;
 }
 .center-block {
@@ -12007,6 +12016,7 @@ button.close {
 }
 #header-placeholder {
   display: inline-block;
+  margin-top: 23px;
 }
 .page-tabs {
   margin-left: -15px;
@@ -12084,12 +12094,6 @@ button.close {
 img#logo-footer {
   margin-bottom: 1em;
 }
-#Judul {
-  color: purple;
-}
-#Search {
-  color: yellow;
-}
 @font-face {
   font-family: 'Advent Pro';
   font-style: normal;
@@ -12106,13 +12110,25 @@ img#logo-footer {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+  src: local('Lato Regular'), local('Lato-Regular'), url(fonts/Lato-Regular.ttf) format('ttf'), url(http://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(fonts/Lato-Bold.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(fonts/Lato-LightItalic.ttf) format('ttf');
 }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(http://fonts.gstatic.com/s/lato/v11/1KWMyx7m-L0fkQGwYhWwuuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+  src: local('Lato Italic'), local('Lato-Italic'), url(fonts/Lato-Italic.ttf) format('ttf'), url(http://fonts.gstatic.com/s/lato/v11/1KWMyx7m-L0fkQGwYhWwuuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
 }
 @font-face {
   font-family: 'Offside';
@@ -12219,6 +12235,11 @@ blockquote {
 .btn.btn-sm {
   border-radius: 10px 2px;
 }
+.btn-accent {
+  color: white;
+  background-color: #efba00;
+  border-width: 0;
+}
 .nav-pills li a {
   display: block !important;
 }
@@ -12228,6 +12249,129 @@ blockquote {
   border-left-width: 0.4em;
   border-color: #efba00;
   font-size: 1.7em;
+}
+.kotak-section {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 1em;
+}
+.kotak-section .kotak-container {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .kotak-section .kotak-container {
+    display: none !important;
+  }
+}
+.kotak-section .kotak-container .kotak-big {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  height: 40em;
+  background-color: #0098ff;
+  display: block;
+  float: left;
+}
+@media (min-width: 992px) {
+  .kotak-section .kotak-container .kotak-big {
+    float: left;
+    width: 50%;
+  }
+}
+.kotak-section .kotak-container .kotak-big .kotak-row {
+  margin-left: 0;
+  margin-right: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.kotak-section .kotak-container .kotak-big .kotak-row .kotak-small {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 20em;
+  background-color: #efba00;
+}
+@media (min-width: 768px) {
+  .kotak-section .kotak-container .kotak-big .kotak-row .kotak-small {
+    float: left;
+    width: 50%;
+  }
+}
+.kotak-big {
+  text-align: center;
+}
+.kotak-big:hover .overlay {
+  opacity: 0.5;
+}
+.kotak-big a.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.kotak-big .kotak-content {
+  padding-top: 15%;
+}
+.kotak-big .kotak-content * {
+  position: relative;
+}
+.kotak-big .kotak-content .title {
+  line-height: 1.42857143;
+  margin-bottom: 7em;
+  color: white;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+.kotak-big .kotak-content .subtitle {
+  font-size: 12px;
+  line-height: 1.42857143;
+  margin-bottom: 0;
+  color: white;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.kotak-big .kotak-content .cta {
+  float: none;
+  padding: 0.8em 2em;
+}
+.kotak-big a {
+  color: white;
+}
+.kotak-small a.overlay {
+  opacity: 0.3;
+}
+.kotak-small:hover .overlay {
+  opacity: 0.1;
+}
+.kotak-small .kotak-content {
+  background-color: black;
+  padding: 2em;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.kotak-small .kotak-content .title {
+  margin: 0;
+  font-size: 18px;
+}
+.kotak-small .kotak-content .subtitle a {
+  color: #777777;
 }
 @keyframes ticker {
   0% {
@@ -12552,4 +12696,3 @@ hr {
 .rhythm blockquote {
   padding: 1.42857143 1.42857143 0;
 }
-/*# sourceMappingURL=bootstrap.css.map */
