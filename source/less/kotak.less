@@ -2,9 +2,41 @@
 @warna-overlay: @warna-1;
 @warna-kotak-kecil: @warna-1; //darken(@warna-3,30%);
 @warna-title: white;
-@warna-subtitle: @gray-light;
+@warna-subtitle: lighten(@warna-3, 20%); //@warna-3;
 .kotak {
     background-size: cover;
+    .hidden-xs;
+    // a:not(.btn) {
+    //     position: relative;
+    //     text-decoration: none;
+    //     &:before {
+    //         content: "";
+    //         position: absolute;
+    //         width: 100%;
+    //         height: 2px;
+    //         bottom: 0;
+    //         left: 0;
+    //         background-color: #fff;
+    //         visibility: hidden;
+    //         -webkit-transform: scaleX(0);
+    //         transform: scaleX(0);
+    //         -webkit-transition: all 0.3s ease-in-out 0s;
+    //         transition: all 0.3s ease-in-out 0s;
+    //     }
+    //     &:hover:before {
+    //         visibility: visible;
+    //         -webkit-transform: scaleX(1);
+    //         transform: scaleX(1);
+    //     }
+    // }
+}
+
+.overlay {
+    -webkit-transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -ms-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
 }
 
 .kotak-section {
@@ -16,7 +48,6 @@
         .make-row();
         margin-right: auto;
         margin-left: auto;
-        .hidden-xs;
         .kotak-big {
             .make-md-column(6);
             .make-xs-column(12);
@@ -24,7 +55,6 @@
             padding-right: 0;
             padding-bottom: 0;
             height: @tinggi-kotak;
-            //background-color: @warna-3;
             display: block;
             float: left;
             .kotak-row {
@@ -133,23 +163,23 @@
             a {
                 color: @warna-subtitle;
             }
-            line-height: @line-height-base;
+            line-height: @line-height-base*1.5;
         }
     }
 }
 
-@media (max-width:@screen-md) {
-    .full-md{
+@media (max-width: @screen-md) {
+    .full-md {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
         padding-right: 0;
         padding-left: 0;
     }
-    .kotak-utama{
+    .kotak-utama {
         height: @tinggi-kotak/2 !important;
         padding-top: 2em;
-        .title{
+        .title {
             margin-bottom: 1.5em!important;
         }
     }
