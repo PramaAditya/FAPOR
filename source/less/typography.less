@@ -2,7 +2,7 @@ body {
    min-height: 100%;
    font-weight: 400;
    font-style: normal;
-   line-height: 25px;
+   line-height: @line-height-computed;
 }
 
 h1 {
@@ -63,15 +63,16 @@ blockquote.pull-quote {
    padding: 0em 0em 0em 0.7em;
 }
 
-div#content {
+.content {
    margin: 0 auto;
    text-align: left;
    width: 100%;
    //padding: 1em 0px 0px 0px;
-   ol {
+   ol,ul {
+      padding-left: 2em;
       li {
             margin: 0px 0px 1em 0px;
-            line-height: 1.5em;
+            line-height: @line-height-computed;
          }
       margin: 0px 0px 1.563em 0px; 
    }
