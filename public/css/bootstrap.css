@@ -15593,31 +15593,12 @@ blockquote {
 .kotak {
   background-size: cover;
 }
-@media (max-width: 767px) {
-  .kotak {
-    display: none !important;
-  }
-}
 .overlay {
   -webkit-transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
   -ms-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-}
-.kotak-section {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInUp;
-  -moz-animation-name: fadeInUp;
-  -o-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }
 .kotak-section .kotak-utama {
   -webkit-animation-duration: 1s;
@@ -15646,6 +15627,22 @@ blockquote {
   -moz-animation-name: fadeInRight;
   -o-animation-name: fadeInRight;
   animation-name: fadeInRight;
+}
+.kotak-utama .title a {
+  border-bottom-style: solid;
+  border-bottom: 10%;
+  border-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.kotak-utama .title a:hover,
+.kotak-utama .title a:active,
+.kotak-utama .title a:focus {
+  text-decoration: none;
+  border-color: #ffffff;
 }
 .kotak-section {
   margin-left: -15px;
@@ -15710,11 +15707,6 @@ blockquote {
   background-size: cover;
   text-align: center;
 }
-@media (max-width: 767px) {
-  .kotak-big {
-    display: none !important;
-  }
-}
 .kotak-big a.overlay {
   width: 100%;
   height: 100%;
@@ -15757,11 +15749,6 @@ blockquote {
 .kotak-small {
   background-size: cover;
 }
-@media (max-width: 767px) {
-  .kotak-small {
-    display: none !important;
-  }
-}
 .kotak-small a.overlay {
   opacity: 0.3;
 }
@@ -15788,6 +15775,20 @@ blockquote {
 }
 .kotak-small .kotak-content .subtitle a {
   color: #66c1ff;
+}
+.full-md {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.full-md .kotak-section {
+  margin-top: 0;
+}
+.full-md .kotak-section .kotak-content {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 @media (max-width: 992px) {
   .full-md {

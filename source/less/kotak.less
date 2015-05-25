@@ -5,22 +5,17 @@
 @warna-subtitle: lighten(@warna-3, 20%); //@warna-3;
 .kotak {
     background-size: cover;
-    .hidden-xs;
+    //.hidden-xs;
 }
 
 .overlay {
     .prefixed(transition, opacity .25s ease-in-out);
-    // -webkit-transition: opacity .25s ease-in-out;
-    // -moz-transition: opacity .25s ease-in-out;
-    // -ms-transition: opacity .25s ease-in-out;
-    // -o-transition: opacity .25s ease-in-out;
-    // transition: opacity .25s ease-in-out;
 }
 
 // Untuk Animasi
 .kotak-section {
-    .animated;
-    .fadeInUp;
+    //.animated;
+    //.fadeInUp;
     .kotak-utama {
         .animated;
         .fadeInLeft;
@@ -28,6 +23,19 @@
     .kotak-small {
         .animated;
         .fadeInRight;
+    }
+}
+
+.kotak-utama .title {
+    a {
+        border-bottom-style: solid;
+        border-bottom: 10%;
+        border-color: rgba(255, 255, 255, 0);
+        .prefixed(transition, all @mediumDuration ease-in-out);
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+            border-color: rgba(255, 255, 255, 1);
+        }
     }
 }
 
@@ -74,9 +82,6 @@
         }
     }
     padding-top: @line-height-computed*6;
-    // a.overlay{
-    //     background-color: @warna-kotak-kecil !important;
-    // }
 }
 
 .kotak-big {
@@ -115,7 +120,6 @@
             font-style: italic;
         }
         .cta {
-            //float: none;
             padding: 0.8em 2em;
             &:hover {
                 color: @warna-1;
@@ -156,6 +160,21 @@
                 color: @warna-subtitle;
             }
             line-height: @line-height-base*1.5;
+        }
+    }
+}
+
+.full-md {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    .kotak-section {
+        margin-top: 0;
+        .kotak-content {
+            padding-left: 1em;
+            padding-right: 1em;
         }
     }
 }
