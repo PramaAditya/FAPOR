@@ -1,0 +1,94 @@
+.content-column {
+    .kol-isi;
+    &.middle {
+        .make-xs-column(12);
+        .make-sm-column(9);
+        .make-md-column(6);
+    }
+    &.left,
+    &.right {
+        .make-xs-column(12);
+        .make-sm-column(9);
+    }
+    &.single{
+        .make-xs-column(12);
+        .make-lg-column(8);
+        .make-lg-column-offset(2);
+    }
+    #nama-layanan {
+        line-height: @line-height-computed;
+    }
+    #btn-web-layanan {
+        .btn;
+        .btn-primary;
+        .btn-sm;
+        font-size: 12px;
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+    .breadcrumb {
+        margin-bottom: @line-height-computed;
+    }
+}
+
+.sidebar {
+    .hidden-xs;
+    .make-sm-column(3);
+}
+
+.navigation-column {
+    .text-left;
+    .sidebar;
+    .nav-pills {
+        @warna-bg-nav-pills: white;//@brand-primary;
+        @warna-link-nav-pills: @brand-primary;
+        @warna-hover-nav-pills: lighten(@warna-link-nav-pills, 20%);
+        @warna-active-nav-pills: @brand-primary;
+        background-color: @warna-bg-nav-pills;
+        li {
+            & + li{
+            margin-top: 0;
+            border-style: solid;
+            border-width: 0;
+            border-top-width: 1px !important;
+            }
+            a {
+                display: block !important;
+                color: @warna-link-nav-pills;
+                &:hover{
+                    color:@warna-hover-nav-pills;
+                    text-decoration: underline;
+                }
+            }
+            &:not(.active) {
+                a {
+                }
+            }
+            &.active {
+                border-style: solid;
+                border-width: 0;
+                // border-left-width: 0.4em;
+                // border-color: @warna-4; //@nav-pills-active-link-hover-color;
+                //font-size: 1.7em;
+                a{
+                    background-color: @warna-bg-nav-pills;
+                    color: @warna-active-nav-pills;
+                    font-weight: 700!important;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.widget-column {
+    @widget-radius: 0;
+    .sidebar;
+    .hidden-sm;
+    .panel {
+        border-radius: @widget-radius;
+        .panel-heading {
+            border-radius: @widget-radius;
+        }
+    }
+}

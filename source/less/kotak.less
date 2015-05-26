@@ -1,26 +1,21 @@
 @tinggi-kotak: @box-height; //variables.less
-@warna-overlay: @warna-1;
-@warna-kotak-kecil: @warna-1; //darken(@warna-3,30%);
+@warna-overlay: black;//@warna-1;
+@warna-kotak-kecil: darken(@brand-primary,10%); //darken(@warna-3,30%);
 @warna-title: white;
 @warna-subtitle: lighten(@warna-3, 20%); //@warna-3;
 .kotak {
     background-size: cover;
-    .hidden-xs;
+    //.hidden-xs;
 }
 
 .overlay {
     .prefixed(transition, opacity .25s ease-in-out);
-    // -webkit-transition: opacity .25s ease-in-out;
-    // -moz-transition: opacity .25s ease-in-out;
-    // -ms-transition: opacity .25s ease-in-out;
-    // -o-transition: opacity .25s ease-in-out;
-    // transition: opacity .25s ease-in-out;
 }
 
 // Untuk Animasi
 .kotak-section {
-    .animated;
-    .fadeInUp;
+    //.animated;
+    //.fadeInUp;
     .kotak-utama {
         .animated;
         .fadeInLeft;
@@ -67,18 +62,6 @@
     }
 }
 
-.kotak-utama {
-    &:hover {
-        .overlay {
-            opacity: 0.5;
-        }
-    }
-    padding-top: @line-height-computed*6;
-    // a.overlay{
-    //     background-color: @warna-kotak-kecil !important;
-    // }
-}
-
 .kotak-big {
     .kotak;
     text-align: center;
@@ -86,7 +69,6 @@
         width: 100%;
         height: 100%;
         background-color: @warna-overlay;
-        opacity: 0.3;
         z-index: 0;
         position: absolute;
         top: 0;
@@ -102,7 +84,7 @@
             margin-bottom: @line-height-computed*8;
             margin-top: -(@line-height-computed/2);
             color: @warna-title;
-            font-family: @font-family-sans-serif;
+            font-family: @font-family-sans-serif; 
             font-weight: 700;
         }
         .subtitle {
@@ -115,7 +97,6 @@
             font-style: italic;
         }
         .cta {
-            //float: none;
             padding: 0.8em 2em;
             &:hover {
                 color: @warna-1;
@@ -127,14 +108,32 @@
     }
 }
 
-.kotak-small {
-    .kotak;
-    a.overlay {
+.kotak-utama {
+    .overlay{
         opacity: 0.3;
     }
     &:hover {
         .overlay {
-            opacity: 0.2;
+            opacity: 0.5;
+        }
+    }
+    padding-top: @line-height-computed*6;
+    .title {
+        line-height: 1!important;
+        margin-top: 0!important;
+        text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+        font-family: @headings-font-family !important;
+    }
+}
+
+.kotak-small {
+    .kotak;
+    a.overlay {
+        opacity: 0.4;
+    }
+    &:hover {
+        .overlay {
+            opacity: 0.1;
         }
     }
     .kotak-content {
@@ -145,7 +144,7 @@
         bottom: 0;
         position: absolute;
         width: 100%;
-        height: @line-height-computed*5;
+        height: @line-height-computed*4;
         .title {
             margin: 0;
             font-size: @font-size-h5;
@@ -156,6 +155,21 @@
                 color: @warna-subtitle;
             }
             line-height: @line-height-base*1.5;
+        }
+    }
+}
+
+.full-md {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    .kotak-section {
+        margin-top: 0;
+        .kotak-content {
+            padding-left: 1em;
+            padding-right: 1em;
         }
     }
 }
