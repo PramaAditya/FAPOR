@@ -1,0 +1,57 @@
+@import "variables.less";
+@import "style.less";
+@tinggi-kotak: @box-height;
+@warna-overlay: @warna-3;
+@warna-tanggal: @warna-3; 
+@warna-title: black;
+@warna-subtitle: lighten(@warna-3, 20%); //@warna-3;
+
+.tanggal {
+
+}
+
+.tanggal-section {
+	.make-row();
+    padding: 0px;
+    margin: 0px;
+    
+}
+.tanggal-container {
+    .make-row();
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid #CCCCFF;
+}
+.tanggal-kotak {
+    .make-xs-column(2);
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    height: 100px;
+    display: block;
+    float: center;
+    background-color: blue;
+    font-size: medium;
+}
+.tanggal-angka {
+    position: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: medium;
+    color: white;
+}
+.tanggal-bulan {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    float: center;
+    font-size: medium;
+    color: white;
+}
+.berita-container {
+    .make-xs-column(10);
+    padding-left: 10px;
+}
