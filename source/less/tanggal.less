@@ -6,23 +6,24 @@
 @warna-title: black;
 @warna-subtitle: lighten(@warna-3, 20%); //@warna-3;
 
-.tanggal {
+.bas-tanggal {
 
 }
 
-.tanggal-section {
+.bas-tanggal-section {
 	.make-row();
     padding: 0px;
     margin: 0px;
-    
 }
-.tanggal-container {
+.bas-tanggal-container {
     .make-row();
+    padding-top: 5px!important;
     margin-right: auto;
     margin-left: auto;
+    padding: 0px;
     border-bottom: 1px solid #CCCCFF;
 }
-.tanggal-kotak {
+.bas-tanggal-kotak {
     .make-xs-column(2);
     padding-top: 20px;
     padding-left: 0;
@@ -31,27 +32,30 @@
     height: 100px;
     display: block;
     float: center;
-    background-color: blue;
-    font-size: medium;
+    background-color: @warna-3;
 }
-.tanggal-angka {
+.bas-tanggal-angka {
     position: center;
     padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: medium;
+    font-size: xx-large;
+    text-align: center;
     color: white;
 }
-.tanggal-bulan {
+.bas-tanggal-bulan {
     position: relative;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
-    padding-bottom: 0px;
     float: center;
-    font-size: medium;
+    font-size: x-large;
+    text-align: center;
     color: white;
 }
-.berita-container {
+.bas-berita-container {
     .make-xs-column(10);
     padding-left: 10px;
+    padding-bottom: 0px;
+    h4 {
+        margin-bottom: 0px;
+    }
 }
