@@ -1,2 +1,24 @@
+#header-placeholder {
+    display: inline-block;
+    margin-top: 14px;
+}
 
-
+.tanda-section {
+	margin-top: @baseline;
+	min-height: @baseline*2;
+    .tanda-container {
+        .make-sm-column(8);
+        .make-sm-column-offset(2);
+        .text-center;
+        .nav-pills {
+            display: inline-block;
+            li a {
+                margin: 0;
+                padding: 0.2em 0.4em;
+                &.active {
+                    background-color: @warna-3;
+                }
+            }
+        }
+    }
+}
