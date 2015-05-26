@@ -3978,8 +3978,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #0098ff;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #0303af;
 }
 .nav-stacked > li {
   float: none;
@@ -15285,6 +15285,9 @@ body {
   left: 0;
   right: 0;
 }
+.section {
+  background-color: #F2F2F2;
+}
 #title {
   background-color: #e19400;
   background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
@@ -15834,6 +15837,25 @@ blockquote {
     width: 75%;
   }
 }
+.content-column.single {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .content-column.single {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .content-column.single {
+    margin-left: 16.66666667%;
+  }
+}
 .content-column #nama-layanan {
   line-height: 25px;
 }
@@ -16019,13 +16041,32 @@ fieldset[disabled] .content-column #btn-web-layanan.active {
     width: 25%;
   }
 }
+.navigation-column .nav-pills {
+  background-color: #ffffff;
+}
+.navigation-column .nav-pills li + li {
+  margin-top: 0;
+  border-style: solid;
+  border-width: 0;
+  border-top-width: 1px !important;
+}
 .navigation-column .nav-pills li a {
   display: block !important;
+  color: #0303af;
+}
+.navigation-column .nav-pills li a:hover {
+  color: #1d1dfb;
+  text-decoration: underline;
 }
 .navigation-column .nav-pills li.active {
   border-style: solid;
   border-width: 0;
-  font-size: 1.7em;
+}
+.navigation-column .nav-pills li.active a {
+  background-color: #ffffff;
+  color: #0303af;
+  font-weight: 700!important;
+  text-decoration: none;
 }
 .widget-column {
   position: relative;
@@ -16378,3 +16419,4 @@ hr {
 .rhythm blockquote {
   padding: 1.42857143 1.42857143 0;
 }
+/*# sourceMappingURL=bootstrap.css.map */
