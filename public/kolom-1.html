@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Berita</title>
-  <link rel="stylesheet" href="http://basehold.it/25">
+  <!-- <link rel="stylesheet" href="http://basehold.it/25"> -->
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <!-- <link href="css/bootstrap-theme.css" rel="stylesheet"> -->
@@ -24,7 +24,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav-tanda">
   <nav>
     <img id="header-placeholder" class="img-responsive" src="img/Header-tua.png">
   </nav>
@@ -43,13 +43,17 @@
     </div>
   </div> -->
   <div class="tanda-section">
-    <div class="container">
+  <!-- <div class="tanda-section">   -->
+    <div data-spy="affix" data-offset-top="165" class="container">
       <div class="row">
-        <div class="tanda-container">
+        <div id="nav-tanda" class="tanda-container ">
           <ul class="nav nav-pills justified">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
+            <li role="presentation" class="active"><a href="#sejarah">Sejarah</a></li>
+            <li role="presentation"><a href="#daftar-menteri">Menteri</a></li>
+            <li role="presentation"><a href="#visi-misi">Visi & Misi</a></li>
+            <li role="presentation"><a href="#tugas-fungsi">Tugas & Fungsi</a></li>
+            <li role="presentation"><a href="#struktur-organisasi">Struktur Organisasi</a></li>
+            <li role="presentation"><a href="#unit-kerja">Unit Kerja</a></li>
           </ul>
         </div>
       </div>
@@ -59,12 +63,57 @@
     <div class="container">
       <div class="baseline-tuner row">
         <div class="content-column single">
-          <h1 class="judul">Sejarah</h1>
+          <h1 id="sejarah" class="judul nav-fix">Sejarah</h1>
           <p>Kementerian Komunikasi dan Informatika (sebelumnya bernama "Departemen Penerangan" (1945-1999), "Kementerian Negara Komunikasi dan Informasi" (2001-2005), dan Departemen Komunikasi dan Informatika (2005-2009), disingkat Depkominfo) adalah Departemen/kementerian dalam Pemerintah Indonesia yang membidangi urusan komunikasi dan informatika. Kementerian Kominfo dipimpin oleh seorang Menteri Komunikasi dan Informatika (Menkominfo) yang sejak tanggal 22 Oktober 2009 dijabat oleh Tifatul Sembiring.</p>
+          <h1 id="daftar-menteri" class="judul nav-fix">Daftar Menteri</h1>
+          <p>Berikut adalah daftar orang yang pernah menjabat sebagai Menteri Komunikasi dan Informatika (2001-sekarang):</p>
+          <ol>
+            <li>H. Syamsul Mu'arif, B.A. (Kabinet Gotong Royong, Durasi: 9 Agustus 2001 s/d 20 Oktober 2004, Bernama Menteri Negara Komunikasi dan Informasi);</li>
+            <li>Dr. Sofyan A. Djalil, SH, MA, MALD (Kabinet Indonesia Bersatu, Durasi: 21 Oktober 2004 s/d 9 Mei 2007);</li>
+            <li>Prof. Dr. Ir. H. Mohammad Nuh, DEA (Kabinet Indonesia Bersatu, Durasi: 9 Mei 2007 s/d 22 Oktober 2009);</li>
+            <li>Ir. H. Tifatul Sembiring (Kabinet Indonesia Bersatu II, Durasi : 22 Oktober 2009 s/d 30 September 2014).</li>
+            <li>Rudiantara (Kabinet Kerja, Durasi: 27 Oktober 2014 s/d sekarang).</li>
+          </ol>
+          <h1 id="visi-misi" class="judul nav-fix">Visi & Misi</h1>
+          <h2 class="subjudul">Visi</h2>
+          <p>Terwujudnya Indonesia informatif menuju masyarakat sejahtera melalui pembangunan kominfo berkelanjutan, yang merakyat dan ramah lingkungan, dalam kerangka Negara Kesatuan Republik Indonesia</p>
+          <h2 class="subjudul">Misi</h2>
+          <ol>
+            <li>Meningkatkan kecukupan informasi masyarakat dengan karakteristik komunikasi lancar dan informasi benar menuju terbentuknya Indonesia informatif dalam kerangka NKRI;</li>
+            <li>Mewujudkan birokrasi layanan komunikasi dan informatika yang profesional dan memiliki integritas moral yang tinggi;</li>
+            <li>Mendorong peningkatan tayangan dan informasi edukatif untuk mendukung pembangunan karakter bangsa;</li>
+            <li>Mengembangkan sistem kominfo yang berbasis kemampuan lokal yang berdaya saing tinggi dan ramah lingkungan;</li>
+            <li>Memperjuangkan kepentingan nasional kominfo dalam sistem pasar global.</li>
+          </ol>
+          <h1 id="tugas-fungsi" class="judul nav-fix">Tugas & Fungsi</h1>
+          <h2 class="subjudul">Tugas</h2>
+          <p>Kementerian Komunikasi dan Informatika mempunyai tugas menyelenggarakan urusan di bidang komunikasi dan informatika dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara.</p>
+          <h2 class="subjudul">Fungsi</h2>
+          <ol>
+            <li>Perumusan, penetapan, dan pelaksanaan kebijakan di bidang komunikasi dan informatika;</li>
+            <li>Pengelolaan barang milik/kekayaan negara yang menjadi tanggung jawab Kementerian Komunikasi dan Informatika;</li>
+            <li>Pengawasan atas pelaksanaan tugas di lingkungan Kementerian Komunikasi dan Informatika;</li>
+            <li>Pelaksanaan bimbingan teknis dan supervisi atas pelaksanaan urusan Kementerian Komunikasi dan Informatika di daerah; dan</li>
+            <li>Pelaksanaan kegiatan teknis yang berskala nasional.</li>
+          </ol>
+          <h1 id="unit-kerja" class="judul nav-fix">Unit Kerja</h1>
+          <p>Kementerian Komunikasi dan Informatika Republik Indonesia terdiri dari 7 Unit Kerja, yaitu :</p>
+          <ol>
+            <li>Sekretariat Jenderal</li>
+            <li>Direktorat Jenderal Sumber Daya Perangkat Pos dan Informatika</li>
+            <li>Direktorat Jenderal Penyelenggaraan Pos dan Informatika</li>
+            <li>Direktorat Jenderal Aplikasi Informatika</li>
+            <li>Direktorat Jenderal Informasi dan Komunikasi Publik</li>
+            <li>Badan Penelitian dan Pengembangan Sumber Daya Manusia</li>
+            <li>Inspektorat Jenderal</li>
+          </ol>
         </div>
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+$('body').scrollspy({ target: '#nav-tanda' })
+  </script>
 </body>
 
 </html>

@@ -4,19 +4,46 @@
 }
 
 .tanda-section {
-	margin-top: @baseline;
-	min-height: @baseline*2;
+	.container.affix{
+		width:100%;
+		z-index:100000;
+		top:0;
+		margin-top: 0;
+		.nav-pills{
+			padding-top: @baseline!important;
+			background-color: white!important;
+			border-bottom: 1px solid @gray-lighter;
+			border-radius: 0;
+		} 
+	}
+    margin-top: @baseline;
+    min-height: @baseline*2;
+    margin-bottom: @baseline;
     .tanda-container {
         .make-sm-column(8);
         .make-sm-column-offset(2);
         .text-center;
         .nav-pills {
+
             display: inline-block;
-            li a {
-                margin: 0;
-                padding: 0.2em 0.4em;
+            //background-color: @gray-lighter;
+            padding:.5em 0em;
+            border-radius: @border-leaf;
+            li {
+
+            	margin-left: @grid-gutter-width/4;
+            	margin-right: @grid-gutter-width/4;
+                a {
+                	z-index:100000;
+                    margin: 0;
+                    padding: 0.2em 0.4em;
+                    
+                    border-radius: @border-leaf;
+                }
                 &.active {
-                    background-color: @warna-3;
+                    a {
+                        background-color: @warna-2 !important;
+                    }
                 }
             }
         }
