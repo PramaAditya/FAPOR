@@ -12,8 +12,11 @@
     }
     .grow;
     .prefixed(transition, all .1s ease-in-out);
-    &:active {
-        .prefixed(transform, scale(1.05));
+    &:active,&:focus {
+        .prefixed(transform, scale(1));
+    }
+    .glyphicon{
+        margin-left: .3em;
     }
 }
 
@@ -22,3 +25,4 @@
     background-color: @warna-4;
     border-width: 0;
 }
+
