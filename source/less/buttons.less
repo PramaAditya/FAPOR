@@ -4,22 +4,17 @@
     //background-image: url(http://www.transparenttextures.com/patterns/diagonal-striped-brick.png);
     //background-color: red !important;
     border-radius: @button-largest-radius @button-smallest-radius;
+    border-style: none;
     font-family: "Offside", @font-family-sans-serif;
-    .grow;
     &.btn-sm {
         border-radius: 10px @button-smallest-radius;
-
+        font-size: 12px;
     }
-    .prefixed(transition,all .15s ease-in-out);
-     // means:
-     // -webkit-transition: all .25s ease-in-out;
-     // -moz-transition: all .25s ease-in-out;
-     // -ms-transition: all .25s ease-in-out;
-     // -o-transition: all .25s ease-in-out;
-     // transition: all .25s ease-in-out;
-     &:active{
-	.prefixed(transform,scale(1.05));
-     }
+    .grow;
+    .prefixed(transition, all .1s ease-in-out);
+    &:active {
+        .prefixed(transform, scale(1.05));
+    }
 }
 
 .btn-accent {

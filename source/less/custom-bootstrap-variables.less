@@ -14,7 +14,7 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-primary:         @warna-3; //Custom Variable
+@brand-primary:         @warna-1; //Custom Variable
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -31,9 +31,9 @@
 @text-color:            black;
 
 //** Global textual link color.
-@link-color:            @warna-3;
+@link-color:            @brand-primary;//@warna-3;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      @warna-1;
+@link-hover-color:      darken(@link-color, 10%);//@warna-1;
 //** Link hover decoration.
 @link-hover-decoration: underline;
 
@@ -48,7 +48,7 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          15px;//14px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -62,7 +62,7 @@
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+@line-height-computed:    25px;//floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    "Advent Pro","Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -434,8 +434,8 @@
 
 //== Pills
 @nav-pills-border-radius:                   0;//@border-smallest-radius @border-smallest-radius @border-largest-radius @border-smallest-radius;
-@nav-pills-active-link-hover-bg:            white;//@warna-4;
-@nav-pills-active-link-hover-color:         @warna-3;//@component-active-color;
+@nav-pills-active-link-hover-bg:            @brand-primary;//@warna-4;//white;
+@nav-pills-active-link-hover-color:         @component-active-color;
 
 
 //== Pagination
@@ -790,7 +790,7 @@
 //** Text color of current page in the breadcrumb
 @breadcrumb-active-color:       @warna-4;
 //** Textual separator for between breadcrumb elements
-@breadcrumb-separator:          "»";
+@breadcrumb-separator:          "";//"»";
 
 
 //== Carousel

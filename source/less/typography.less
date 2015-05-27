@@ -2,11 +2,11 @@ body {
    min-height: 100%;
    font-weight: 400;
    font-style: normal;
-   line-height: 25px;
+   line-height: @line-height-computed;
 }
 
 h1 {
-   font-size: 3.25em;
+   //font-size: 3.25em;
    line-height: 1.154em;
    margin: 0px 0px 0.288em 0px;
    font-weight: 700;
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-   font-size: 2.25em;
+   //font-size: 2.25em;
    line-height: 1.278em;
    margin: 0px 0px 0.694em 0px;
    font-family: "Advent Pro";
@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-   font-size: 1.75em;
+   //font-size: 1.75em;
    line-height: 1.286em;
    margin: 0px 0px 0.679em 0px;
    font-family: "Advent Pro";
@@ -37,7 +37,7 @@ h4 {
    font-style: normal;
    font-family: "Advent Pro";
    line-height: 1.563em;
-   font-size: 1em;
+   //font-size: 1em;
    margin: 0px 0px 1.563em 0px;
 }
 
@@ -46,10 +46,11 @@ p {
    font-family: Lato;
    font-weight: 400;
    font-style: normal;
+   margin-bottom: @baseline;
 }
 
 p.intro {
-   font-size: 1.25em;
+   //font-size: 1.25em;
    line-height: 1.65em;
    margin: 0px 0px 0.65em 0px;
    font-family: "Lato";
@@ -63,18 +64,23 @@ blockquote.pull-quote {
    padding: 0em 0em 0em 0.7em;
 }
 
-div#content {
+.content {
    margin: 0 auto;
    text-align: left;
    width: 100%;
    //padding: 1em 0px 0px 0px;
-   ol {
+   ol,ul {
+      padding-left: 2em;
       li {
             margin: 0px 0px 1em 0px;
-            line-height: 1.5em;
+            line-height: @line-height-computed;
          }
       margin: 0px 0px 1.563em 0px; 
    }
+}
+
+ol,ul{
+   margin-bottom: @baseline;
 }
 
 h5 {
@@ -83,11 +89,11 @@ h5 {
    font-weight: 400;
    font-style: normal;
    line-height: 1.563em;
-   font-size: 1em;
+   //font-size: 1em;
 }
 
 p.quote {
-   font-size: 0.885em;
+   //font-size: 0.885em;
    line-height: 1.217em;
    font-style: italic;
    color: #666666;
