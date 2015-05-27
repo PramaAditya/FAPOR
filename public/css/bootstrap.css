@@ -15557,6 +15557,19 @@ blockquote {
 .tanda-section {
   margin-top: 25px;
   min-height: 50px;
+  margin-bottom: 25px;
+}
+.tanda-section .container.affix {
+  width: 100%;
+  z-index: 100000;
+  top: 0;
+  margin-top: 0;
+}
+.tanda-section .container.affix .nav-pills {
+  padding-top: 25px !important;
+  background-color: white!important;
+  border-bottom: 1px solid #eeeeee;
+  border-radius: 0;
 }
 .tanda-section .tanda-container {
   position: relative;
@@ -15578,13 +15591,21 @@ blockquote {
 }
 .tanda-section .tanda-container .nav-pills {
   display: inline-block;
+  padding: .5em 0em;
+  border-radius: 13px 2px;
+}
+.tanda-section .tanda-container .nav-pills li {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
 }
 .tanda-section .tanda-container .nav-pills li a {
+  z-index: 100000;
   margin: 0;
   padding: 0.2em 0.4em;
+  border-radius: 13px 2px;
 }
-.tanda-section .tanda-container .nav-pills li a.active {
-  background-color: #0098ff;
+.tanda-section .tanda-container .nav-pills li.active a {
+  background-color: #085cf2 !important;
 }
 .kol-isi .breadcrumb {
   margin-left: 0;
@@ -15963,6 +15984,7 @@ blockquote {
 .le-typo ul,
 .le-typo ol,
 .le-typo dl {
+  margin-bottom: 25px;
   padding-left: 60px;
 }
 .le-typo ul li,
@@ -15971,7 +15993,8 @@ blockquote {
   line-height: 25px;
   padding-left: 15px;
 }
-.le-typo .judul {
+.le-typo .judul,
+.le-typo .subjudul {
   font-size: 51px;
   line-height: 50px;
   border-left: 1px solid #eeeeee;
@@ -16010,6 +16033,7 @@ blockquote {
 .content-column.left ul,
 .content-column.left ol,
 .content-column.left dl {
+  margin-bottom: 25px;
   padding-left: 60px;
 }
 .content-column.left ul li,
@@ -16018,7 +16042,8 @@ blockquote {
   line-height: 25px;
   padding-left: 15px;
 }
-.content-column.left .judul {
+.content-column.left .judul,
+.content-column.left .subjudul {
   font-size: 51px;
   line-height: 50px;
   border-left: 1px solid #eeeeee;
@@ -16055,6 +16080,7 @@ blockquote {
 .content-column.middle ul,
 .content-column.middle ol,
 .content-column.middle dl {
+  margin-bottom: 25px;
   padding-left: 60px;
 }
 .content-column.middle ul li,
@@ -16063,7 +16089,8 @@ blockquote {
   line-height: 25px;
   padding-left: 15px;
 }
-.content-column.middle .judul {
+.content-column.middle .judul,
+.content-column.middle .subjudul {
   font-size: 51px;
   line-height: 50px;
   border-left: 1px solid #eeeeee;
@@ -16094,6 +16121,7 @@ blockquote {
 .content-column.right ul,
 .content-column.right ol,
 .content-column.right dl {
+  margin-bottom: 25px;
   padding-left: 60px;
 }
 .content-column.right ul li,
@@ -16102,7 +16130,8 @@ blockquote {
   line-height: 25px;
   padding-left: 15px;
 }
-.content-column.right .judul {
+.content-column.right .judul,
+.content-column.right .subjudul {
   font-size: 51px;
   line-height: 50px;
   border-left: 1px solid #eeeeee;
@@ -16121,12 +16150,12 @@ blockquote {
 @media (min-width: 1200px) {
   .content-column.single {
     float: left;
-    width: 66.66666667%;
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
   .content-column.single {
-    margin-left: 16.66666667%;
+    margin-left: 25%;
   }
 }
 .content-column.single h1,
@@ -16138,6 +16167,7 @@ blockquote {
 .content-column.single ul,
 .content-column.single ol,
 .content-column.single dl {
+  margin-bottom: 25px;
   padding-left: 60px;
 }
 .content-column.single ul li,
@@ -16146,7 +16176,8 @@ blockquote {
   line-height: 25px;
   padding-left: 15px;
 }
-.content-column.single .judul {
+.content-column.single .judul,
+.content-column.single .subjudul {
   font-size: 51px;
   line-height: 50px;
   border-left: 1px solid #eeeeee;
@@ -16156,6 +16187,23 @@ blockquote {
 .content-column.single .judul {
   border-left: none;
   text-align: center;
+  padding-bottom: 11.5px;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 12.5px;
+}
+.content-column.single .judul.nav-fix {
+  margin-top: -75px;
+  padding-top: 75px;
+}
+.content-column.single .judul.nav-fix#sejarah {
+  margin-top: -250px;
+  padding-top: 250px;
+}
+.content-column.single .subjudul {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 300;
+  border-left: none;
 }
 .content-column #nama-layanan {
   line-height: 25px;
