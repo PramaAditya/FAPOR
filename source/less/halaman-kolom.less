@@ -91,7 +91,9 @@
 }
 
 .content-column {
-    .kol-isi;
+    img{
+        margin-bottom: @baseline;
+    }
     &.left {
         .make-xs-column(12);
         .make-sm-column(9);
@@ -111,8 +113,8 @@
     }
     &.single {
         .make-xs-column(12);
-        .make-lg-column(6);
-        .make-lg-column-offset(3);
+        .make-lg-column(8);
+        .make-lg-column-offset(2);
         .le-typo;
         .judul {
             border-left: none;
@@ -172,6 +174,9 @@
         color: @brand-primary;
         border-bottom: 1px solid;
         //font-style: italic;
+        .glyphicon{
+            margin-right: 5px;
+        }
     }
     .nav-pills {
         li {

@@ -1,6 +1,11 @@
 #header-placeholder {
+    max-height: @baseline*6;
+    text-align: center;
+    img{
     display: inline-block;
     margin-top: 14px;
+    max-height: 136px;
+    }
 }
 
 .tanda-section {
@@ -14,14 +19,17 @@
 			background-color: white!important;
 			border-bottom: 1px solid @gray-lighter;
 			border-radius: 0;
+            // padding-left: 81px; 
+            // padding-right: 60px; 
+            // margin-left: -13px;
 		} 
 	}
     margin-top: @baseline;
     min-height: @baseline*2;
     margin-bottom: @baseline;
     .tanda-container {
-        .make-sm-column(8);
-        .make-sm-column-offset(2);
+        .make-md-column(12);
+        //.make-md-column-offset(2);
         .text-center;
         .nav-pills {
 
@@ -29,10 +37,12 @@
             //background-color: @gray-lighter;
             padding:.5em 0em;
             border-radius: @border-leaf;
+            text-align: center;
             li {
-
-            	margin-left: @grid-gutter-width/4;
-            	margin-right: @grid-gutter-width/4;
+                float:left;
+                display: inline-block;
+            	margin-left: @grid-gutter-width/2;
+            	margin-right: @grid-gutter-width/2;
                 a {
                 	z-index:100000;
                     margin: 0;

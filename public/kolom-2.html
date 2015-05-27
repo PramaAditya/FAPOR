@@ -15,6 +15,7 @@
   <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/jasny-bootstrap.js"></script>
+  <script type="text/javascript" src="js/jquery.keeptherhythm.js"></script>
   <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,8 +26,8 @@
 </head>
 
 <body>
-  <nav>
-    <img id="header-placeholder" class="img-responsive" src="img/Header-tua.png">
+  <nav id="header-placeholder">
+    <img class="img-responsive" src="img/Header-tua.png">
   </nav>
   <div class="breadcrumb-section">
     <div class="container">
@@ -57,6 +58,7 @@
         </div>
         <div class="content-column left">
           <h1 class="judul">Siaran Pers Tentang Pengumuman Enam Calon Anggota KRT-BRTI Periode 2015-2018 Terpilih dari Unsur Masyarakat Berdasarkan Hasil Seleksi</h1>
+          <img class="img-responsive" src="img/kontesweb.jpg">
           <p>Dengan berakhirnya masa kerja anggota Komite Regulasi Telekomunikasi pada Badan Regulasi Telekomunikasi Indonesia (KRT-BRTI) Periode 2012-2015 maka Kementerian Komunikasi dan Informatika telah membentuk Panitia Seleksi Calon Anggota KRT-BRTI Periode 2015-2108 melalui Keputusan Menteri Kominfo Nomor 79 Tahun 2015 yang diketuai oleh Basuki Yusuf Iskandar, Kepala Badan Penelitian dan Pengembangan SDM Kemkominfo. Pembentukan Panitia Seleksi sesuai dengan amanat dalam Pasal 10 Peraturan Menteri Kominfo Nomor:36/PER/M.KOMINFO/10/2008 tentang Penetapan Badan Regulasi Telekomunikasi Indonesia yang telah diubah terakhir dengan Peraturan Menteri Kominfo Nomor: 01/PER/M.KOMINFO/02/2011, yang menyatakan bahwa KRT-BRTI berjumlah 9 (sembilan) orang yang terdiri dari 6 (enam) orang dari unsur masyarakat dan 3 (tiga) orang dari unsur pemerintah. Penetapan anggota komite yang berasal dari unsur masyarakat dilaksanakan dengan mekanisme seleksi.</p>
           <p>Proses seleksi calon anggota KRT-BRTI Periode 2015-2018 dari unsur masyarakat adalah sebagai berikut:</p>
           <ul>
@@ -149,6 +151,13 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("div.content-column img").keepTheRhythm({
+      baseLine: 25
+    });
+  });
+  </script>
 </body>
 
 </html>
