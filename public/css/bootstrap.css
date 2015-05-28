@@ -6287,6 +6287,12 @@ button.close {
 .modal-footer:after,
 .page-tabs:before,
 .page-tabs:after,
+.bas-tanggal-section:before,
+.bas-tanggal-section:after,
+.bas-tanggal-container:before,
+.bas-tanggal-container:after,
+.gambar:before,
+.gambar:after,
 .kotak-section:before,
 .kotak-section:after,
 .kotak-section .kotak-container:before,
@@ -6314,6 +6320,9 @@ button.close {
 .panel-body:after,
 .modal-footer:after,
 .page-tabs:after,
+.bas-tanggal-section:after,
+.bas-tanggal-container:after,
+.gambar:after,
 .kotak-section:after,
 .kotak-section .kotak-container:after,
 .kotak-section .kotak-container .kotak-big .kotak-row:after,
@@ -15430,12 +15439,7 @@ img#logo-footer {
 @media (min-width: 768px) {
   #subfooter #info-kontak {
     float: left;
-    width: 75%;
-  }
-}
-@media (min-width: 992px) {
-  #subfooter #info-kontak {
-    margin-left: 8.33333333%;
+    width: 58.33333333%;
   }
 }
 #subfooter #info-kontak * {
@@ -15483,6 +15487,80 @@ img#logo-footer {
     float: left;
     width: 16.66666667%;
   }
+}
+.bas-tanggal-section {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0px;
+  margin: 0px;
+}
+.bas-tanggal-container {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 5px!important;
+  padding-bottom: 3px!important;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
+  border-bottom: 1px solid #CCCCFF;
+}
+.bas-tanggal-kotak {
+  position: relative;
+  float: left;
+  width: 16.66666667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  height: 100px;
+  display: block;
+  float: center;
+  background-color: #0098ff;
+}
+.bas-tanggal-angka {
+  position: center;
+  padding-top: 0px;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+}
+.bas-tanggal-bulan {
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  float: center;
+  font-size: x-large;
+  text-align: center;
+  color: white;
+}
+.bas-berita-container {
+  position: relative;
+  float: left;
+  width: 83.33333333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+}
+.bas-berita-container h4 {
+  margin-bottom: 0px;
+}
+.gambar {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #0098FF;
+  border-bottom: 10px solid black;
+}
+#imagelightbox {
+  position: fixed;
+  z-index: 9999;
+  -ms-touch-action: none;
+  touch-action: none;
 }
 @font-face {
   font-family: 'Open Sans';
