@@ -15436,12 +15436,7 @@ img#logo-footer {
 @media (min-width: 768px) {
   #subfooter #info-kontak {
     float: left;
-    width: 75%;
-  }
-}
-@media (min-width: 992px) {
-  #subfooter #info-kontak {
-    margin-left: 8.33333333%;
+    width: 58.33333333%;
   }
 }
 #subfooter #info-kontak * {
