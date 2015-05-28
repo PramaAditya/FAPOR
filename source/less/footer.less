@@ -1,5 +1,38 @@
-#footer a {
-    color: white;
+#footer {
+    background-color: @warna-2;
+	*{
+		color:white;
+	}
+	padding-top: @baseline;
+	padding-bottom: @baseline*2;
+	.row{
+		margin:0;
+	}
+	h2{
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: @baseline*3/2;
+		font-size: 25px;
+		margin-bottom: @baseline/2;
+	}
+	ul,ol{
+		margin-bottom: 0;
+		li a{
+			font-weight: 300;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			line-height: @baseline;
+			font-size: 14px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}	
+	}
+	.list{
+		.make-sm-column(4);
+		.make-md-column(3);
+		.make-md-column-offset(1);
+	}
 }
 
 #subfooter a,#subfooter a:hover,
@@ -10,3 +43,39 @@
 img#logo-footer {
   margin-bottom:1em;
   }
+
+#subfooter{
+	background-color: @warna-3;
+	padding-top: @baseline;
+	#info-kontak{
+		.make-sm-column(9);
+		.make-md-column-offset(1);
+		*{
+			color:white;
+		}
+		h3{
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: @baseline*2;
+		//font-size: 25px;
+		margin-bottom: 0;
+		}
+		#alamat{
+			list-style: none;
+			li{
+				line-height: @baseline;
+			}
+		}
+		#other-menu{
+			.list-inline; 
+			.text-left;
+			margin-bottom: @baseline; 
+		}
+
+	}
+	#info-kominfo{
+		.text-center;
+		.make-sm-column(3);
+		.make-md-column(2);
+	}
+}

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Berita</title>
+  <title>Tentang Kami</title>
   <!-- <link rel="stylesheet" href="http://basehold.it/25"> -->
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -15,7 +15,8 @@
   <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/jasny-bootstrap.js"></script>
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/jquery.keeptherhythm.js"></script>
+  <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -25,8 +26,8 @@
 </head>
 
 <body data-spy="scroll" data-target="#nav-tanda">
-  <nav>
-    <img id="header-placeholder" class="img-responsive" src="img/Header-tua.png">
+  <nav id="header-placeholder">
+    <img class="img-responsive" src="img/Header-tua.png">
   </nav>
   <!--   <div class="breadcrumb-section">
     <div class="container">
@@ -43,11 +44,10 @@
     </div>
   </div> -->
   <div class="tanda-section">
-  <!-- <div class="tanda-section">   -->
-    <div data-spy="affix" data-offset-top="165" class="container">
+    <div data-spy="affix" data-offset-top="200" class="container"> <!-- 165 -->
       <div class="row">
         <div id="nav-tanda" class="tanda-container ">
-          <ul class="nav nav-pills justified">
+          <ul class="nav nav-pills">
             <li role="presentation" class="active"><a href="#sejarah">Sejarah</a></li>
             <li role="presentation"><a href="#daftar-menteri">Menteri</a></li>
             <li role="presentation"><a href="#visi-misi">Visi & Misi</a></li>
@@ -112,7 +112,14 @@
     </div>
   </div>
   <script type="text/javascript">
-$('body').scrollspy({ target: '#nav-tanda' })
+  $(document).ready(function() {
+    $("div.content-column img").keepTheRhythm({
+      baseLine: 25
+    });
+    $('body').scrollspy({
+      target: '#nav-tanda'
+    });
+  });
   </script>
 </body>
 
