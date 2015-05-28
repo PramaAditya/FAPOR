@@ -1,33 +1,65 @@
 #header {
+    .hidden-xs;
+    .hidden-sm;
     position: relative;
     //background-color: @brand-primary;
     height: @baseline*7;
-    text-align: center;
-    * {
-        color: white;
-        .prefixed(transition, all .25s ease-in-out);
+    @nav-item-width: 125px;
+    @logo-width: 140px;
+    .kominfo-container{
+        .container;
+        h3{
+            padding-top: @baseline;
+            .make-md-column(6);
+            font-family: "Oswald";
+            font-size: 30px;
+            color: @brand-primary;
+        }
+        #search{
+            .make-md-column(3);
+            .make-md-column-offset(3);
+            display: inline-table;
+            color: @brand-primary;
+            padding-top: @baseline;
+            .col-sm-10{
+                padding-right: 0;
+            }
+            .col-sm-2{
+                padding-left: 0;
+            }
+            input{
+                padding-right: 0;
+                border: 2px solid @brand-primary;
+            }
+            label{
+                font-size: 25px;
+                margin-left: 0;
+                margin-top: 5px;
+            }
+        }
     }
-
-    @nav-item-width:125px;
-    @logo-width:140px;
-    #logo{
+    #logo {
         max-height: @logo-width;
         position: absolute;
         left: 0;
-        top:0;
-        margin-left: -8px; 
+        top: 0;
+        margin-left: -8px;
         margin-top: -100px;
     }
-    #logo-padding{
+    #logo-padding {
         width: @nav-item-width;
         margin-left: 10px;
         margin-right: 10px;
         height: 100%;
-        a:hover{
+        a:hover {
             background-color: @brand-primary;
         }
     }
     .navbar {
+        * {
+            color: white;
+            .prefixed(transition, all .25s ease-in-out);
+        }
         position: absolute;
         border: 0;
         border-radius: 0;
@@ -37,24 +69,24 @@
         margin-bottom: 0;
         background-color: @brand-primary;
         .nav {
-            float:none; 
+            float: none;
             li {
                 float: none;
                 display: inline-block;
                 min-width: @nav-item-width;
-                a{
+                a {
                     font-size: 200;
                     text-transform: uppercase;
                     letter-spacing: 1.5px;
-                    &:hover{
+                    &:hover {
                         background-color: @warna-4;
                     }
                 }
-                &.active{
-                    a{
+                &.active {
+                    a {
                         border-top: 5px solid @warna-4;
                         padding-top: 7.5px;
-                        &:hover{
+                        &:hover {
                             background-color: @brand-primary;
                         }
                     }
