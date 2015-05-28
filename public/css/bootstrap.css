@@ -2,6 +2,7 @@
 /*imported*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -15362,6 +15363,7 @@ body {
   padding-top: 3em;
 }
 #footer {
+  margin-top: 50px;
   background-color: #085cf2;
   padding-top: 25px;
   padding-bottom: 50px;
@@ -15439,7 +15441,12 @@ img#logo-footer {
 @media (min-width: 768px) {
   #subfooter #info-kontak {
     float: left;
-    width: 58.33333333%;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  #subfooter #info-kontak {
+    margin-left: 8.33333333%;
   }
 }
 #subfooter #info-kontak * {
@@ -15453,21 +15460,28 @@ img#logo-footer {
 }
 #subfooter #info-kontak #alamat {
   list-style: none;
+  margin-bottom: 50px;
 }
 #subfooter #info-kontak #alamat li {
   line-height: 25px;
+}
+#subfooter #info-kontak #alamat .glyphicon {
+  margin-left: 0;
 }
 #subfooter #info-kontak #other-menu {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 #subfooter #info-kontak #other-menu > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
+}
+#subfooter #info-kontak #other-menu a:hover {
+  color: #085cf2;
 }
 #subfooter #info-kominfo {
   text-align: center;
@@ -15475,6 +15489,11 @@ img#logo-footer {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (max-width: 767px) {
+  #subfooter #info-kominfo {
+    display: none !important;
+  }
 }
 @media (min-width: 768px) {
   #subfooter #info-kominfo {
@@ -15486,6 +15505,18 @@ img#logo-footer {
   #subfooter #info-kominfo {
     float: left;
     width: 16.66666667%;
+  }
+}
+#subfooter #info-kominfo a {
+  color: white;
+  font-size: 26px;
+}
+#subfooter #info-kominfo a + a {
+  border-left: 1px solid white;
+}
+@media (max-width: 480px) {
+  #subfooter {
+    margin-top: 50px !important;
   }
 }
 .bas-tanggal-section {
@@ -15725,9 +15756,13 @@ blockquote {
   max-height: 136px;
 }
 .tanda-section {
-  margin-top: 25px;
   min-height: 50px;
   margin-bottom: 25px;
+}
+@media (max-width: 480px) {
+  .tanda-section {
+    display: none!important;
+  }
 }
 .tanda-section .container.affix {
   width: 100%;
@@ -15746,6 +15781,8 @@ blockquote {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
   text-align: center;
 }
 @media (min-width: 992px) {
@@ -15775,14 +15812,6 @@ blockquote {
 .tanda-section .tanda-container .nav-pills li.active a {
   background-color: #085cf2 !important;
 }
-.kol-isi .breadcrumb {
-  margin-left: 0;
-  margin-bottom: 0;
-  padding: 0;
-  background: transparent;
-  padding-top: 10px;
-  line-height: 0;
-}
 .breadcrumb-section {
   padding-top: 3em;
   padding-top: 0;
@@ -15794,8 +15823,8 @@ blockquote {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 50px;
-  min-height: 100px !important;
+  padding-top: 25px;
+  min-height: 75px !important;
   margin-bottom: 25px;
 }
 .breadcrumb-container.single {
@@ -16373,6 +16402,12 @@ blockquote {
 .content-column.single .judul.nav-fix#sejarah {
   margin-top: -250px;
   padding-top: 250px;
+}
+@media (max-width: 480px) {
+  .content-column.single .judul.nav-fix#sejarah {
+    margin-top: 25px;
+    padding-top: 0;
+  }
 }
 .content-column.single .subjudul {
   font-size: 32px;
