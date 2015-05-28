@@ -22,12 +22,13 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
+
 
 <body>
  <!-- Taroh kode diantara <body></body> dari Pingendo di sini -->
     <div class="row">
         <ul class="col-sm-4 list-unstyled">
+            <h3>Semua Berita</h3>
             <li>
                 <a href="#">Berita Kementerian</a>
             </li>
@@ -45,12 +46,62 @@
             </li>
         </ul>
         <ul class="col-sm-4 list-unstyled">
-            <div class="thumbnail">
-                <img src="img/rri.jpg" alt="berita" height="150" weight="150">
-                
+            <h3>Galeri</h3>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="img\back1.gif" alt="back1">
+                    <div class="carousel-caption">
+                      <h3><a href="#">Back1</a></h3>
+                      <p>Panceg dina galur, moal ingkah najan awak lebur, sabab kabogoh ditikung ku batur.</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img\back2.png" alt="back2">
+                    <div class="carousel-caption">
+                      <h3><a href="#">Back2</a></h3>
+                      <p>Panceg dina galur, moal ingkah najan awak lebur, sabab kabogoh ditikung ku batur.</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img\kontesweb.jpg" alt="kontesweb">
+                    <div class="carousel-caption">
+                      <h3><a href="#">KontesWeb</a></h3>
+                      <p>Panceg dina galur, moal ingkah najan awak lebur, sabab kabogoh ditikung ku batur.</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img\langit.jpg" alt="langit">
+                    <div class="carousel-caption">
+                      <h3><a href="#">Langit</a></h3>
+                      <p>Panceg dina galur, moal ingkah najan awak lebur, sabab kabogoh ditikung ku batur.</p>
+                    </div>
+                  </div>
             </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+          </div>
         </ul>
         <ul class="col-sm-4 list-unstyled">
+            <h3>Agenda</h3>
             <div id="accordion" class="panel-group">
               <div class="panel panel-default">
                 <div class="panel-heading">
