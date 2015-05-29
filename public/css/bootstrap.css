@@ -15887,17 +15887,17 @@ blockquote {
 #header .yamm-content {
   background-color: #085cf2;
 }
-#header .dropdown.yamm-fw li {
-  display: block!important;
-}
-#header .dropdown.yamm-fw li.divider {
-  opacity: 0;
-}
+#header .dropdown.yamm-fw li,
 #header .dropdown.yamm li {
-  display: block!important;
+  display: block;
 }
+#header .dropdown.yamm-fw li.divider,
 #header .dropdown.yamm li.divider {
   opacity: 0;
+}
+#header .dropdown.yamm-fw ol.carousel-indicators li,
+#header .dropdown.yamm ol.carousel-indicators li {
+  display: inline-block;
 }
 #header-placeholder {
   max-height: 150px;
