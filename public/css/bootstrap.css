@@ -15774,13 +15774,14 @@ blockquote {
   }
 }
 #header .kominfo-container h3 {
-  padding-top: 25px;
+  padding-top: 12.5px;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
   font-family: "Oswald";
   font-size: 30px;
+  line-height: 30px;
   color: #085cf2;
 }
 @media (min-width: 992px) {
