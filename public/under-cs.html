@@ -16,7 +16,7 @@
  <script type="text/javascript" src="js/bootstrap.js"></script>
  <script type="text/javascript" src="js/jasny-bootstrap.js"></script>
  <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
  <!--[if lt IE 9]>
@@ -39,9 +39,9 @@
 					<div id="countdown"></div>
 					<form class="form-inline signup" role="form">
 					  <div class="form-group">
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan alamat email">
 					  </div>  
-					  <button type="button" class="btn btn-default">Get notified!</button>
+					  <button type="button" class="btn btn-default btn-md btn-accent">Ingatkan Saya!</button>
 					</form>		
 					
 				</div>
@@ -56,7 +56,7 @@
 	</div>
 	<script type="text/javascript">
   $('#countdown').countdown('2016/01/01', function(event) {
-    $(this).html(event.strftime('%w minggu %d hari <br /> %H:%M:%S'));
+    $(this).html(event.strftime('<p class="date">%w Minggu  %d Hari</p> <p class"time">%H:%M:%S</p>'));
   });
 	</script>
 </body>

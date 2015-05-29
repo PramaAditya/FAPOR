@@ -69,5 +69,17 @@
 }
 
 .section{
-    padding-top: 3em;
+    padding-top: @baseline*2;
+}
+#latest-section{
+    padding-top: 0;
+    background-color: @latest-section-bg;
+    .row{
+        margin-top: 0;
+    }
+    .nav-tabs{
+        li.active a{
+            background-color: @latest-section-bg;
+        }
+    }
 }

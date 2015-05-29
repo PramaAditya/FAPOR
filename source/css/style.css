@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*imported*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -15366,17 +15366,7 @@ body {
   }
 }
 .section {
-  padding-top: 50px;
-}
-#latest-section {
-  padding-top: 0;
-  background-color: white;
-}
-#latest-section .row {
-  margin-top: 0;
-}
-#latest-section .nav-tabs li.active a {
-  background-color: white;
+  padding-top: 3em;
 }
 #footer {
   margin-top: 50px;
@@ -15909,9 +15899,6 @@ blockquote {
 #header .navbar .nav li.active a:hover {
   background-color: #085cf2;
 }
-#header .yamm-content {
-  background-color: #085cf2;
-}
 #header-placeholder {
   max-height: 150px;
   text-align: center;
@@ -15979,7 +15966,7 @@ blockquote {
   background-color: #085cf2 !important;
 }
 .breadcrumb-section {
-  padding-top: 50px;
+  padding-top: 3em;
   padding-top: 0;
 }
 .breadcrumb-container {
@@ -16046,9 +16033,6 @@ blockquote {
   -ms-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-}
-#grid-section {
-  padding: 0;
 }
 .kotak-section .kotak-utama {
   -webkit-animation-duration: 1s;
@@ -16151,7 +16135,7 @@ blockquote {
   line-height: 69px;
   margin-bottom: 200px;
   margin-top: -12.5px;
-  color: white;
+  color: black;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
@@ -16219,7 +16203,21 @@ blockquote {
 .kotak-small .kotak-content .subtitle a {
   color: #66c1ff;
 }
-@media (max-width: 1400px) {
+.full-md {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.full-md .kotak-section {
+  margin-top: 0;
+}
+.full-md .kotak-section .kotak-content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+@media (max-width: 992px) {
   .full-md {
     margin-left: 0;
     margin-right: 0;
@@ -16227,18 +16225,9 @@ blockquote {
     padding-right: 0;
     padding-left: 0;
   }
-  .full-md .kotak-section {
-    margin-top: 0;
-  }
-  .full-md .kotak-section .kotak-content {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-}
-@media (max-width: 992px) {
   .kotak-utama {
     height: 20em !important;
-    padding-top: 50px;
+    padding-top: 2em;
   }
   .kotak-utama .title {
     margin-bottom: 1.5em!important;
@@ -17392,6 +17381,7 @@ hr {
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
+  min-height: 10em;
 }
 @media (min-width: 992px) {
   #shortcut-section .shortcut-container .shortcut {
@@ -17406,11 +17396,6 @@ hr {
   position: absolute;
 }
 #shortcut-section .shortcut-container .shortcut .icon {
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  transition: all 0.1s linear;
   display: block;
   max-width: 100%;
   height: auto;
@@ -17454,12 +17439,10 @@ form.signup input.form-control:focus {
 #wrapper h2.title {
   margin-top: 30px;
   margin-bottom: 40px;
-  color: #fff;
-  font-size: 50px;
+  color: red;
+  font-size: 45px;
   font-weight: 900;
-  line-height: 50px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase!important;
+  letter-spacing: -1px;
 }
 #wrapper h3.subtitle {
   color: #fff;
@@ -17476,5 +17459,3 @@ form.signup input.form-control:focus {
   color: #fff;
   text-align: center;
 }
-
-/*# sourceMappingURL=bootstrap.css.map */
