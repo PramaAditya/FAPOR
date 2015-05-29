@@ -15347,6 +15347,14 @@ body {
   letter-spacing: 1.5px;
   color: #4a4a4a;
 }
+@media (max-width: 480px) {
+  #latest-section .nav-tabs li a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+}
 .twitter-header * {
   margin-bottom: 0;
   line-height: 48px;
@@ -15355,6 +15363,7 @@ body {
   border-bottom: 2px solid #0098ff;
 }
 #links-section {
+  padding: 25px;
   background-color: #c9dcfd;
 }
 @media (max-width: 767px) {
@@ -15363,6 +15372,7 @@ body {
   }
 }
 #links-section .links {
+  margin: 0;
   float: none;
   margin-left: 0;
   margin-right: 0;
@@ -17398,10 +17408,7 @@ hr {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 20px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 0;
+  padding: 0;
   height: 100px;
   display: block;
   float: center;
@@ -17410,9 +17417,11 @@ hr {
 .bas-tanggal-angka {
   position: center;
   padding-top: 0px;
-  font-size: xx-large;
+  font-size: 36px;
   text-align: center;
+  line-height: 62.5px;
   color: white;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .bas-tanggal-bulan {
   position: relative;
@@ -17423,6 +17432,9 @@ hr {
   font-size: x-large;
   text-align: center;
   color: white;
+  line-height: 25px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 .bas-berita-container {
   position: relative;
@@ -17444,7 +17456,7 @@ hr {
 #shortcut-section .shortcut-container .shortcut {
   text-align: center;
   float: left;
-  width: 50%;
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
   position: relative;
@@ -17460,16 +17472,19 @@ hr {
   }
 }
 #shortcut-section .shortcut-container .shortcut .icon-container {
-  height: 150px;
+  height: 140px;
 }
 #shortcut-section .shortcut-container .shortcut .icon-container .icon-shadow {
   display: block;
   max-width: 100%;
   height: auto;
-  position: absolute;
   z-index: 3;
-  height: 150px;
-  left: 24%;
+  height: 140px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 #shortcut-section .shortcut-container .shortcut .icon-container .icon-obj {
   -webkit-transition: all 0.1s linear;
@@ -17480,23 +17495,76 @@ hr {
   display: block;
   max-width: 100%;
   height: auto;
-  position: absolute;
   z-index: 3;
-  height: 150px;
-  left: 24%;
+  height: 140px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 4;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
 }
-#shortcut-section .shortcut-container .shortcut .icon-container .icon-obj:hover {
-  opacity: 0;
+#shortcut-section .shortcut-container .shortcut .icon-container .icon-obj:hover,
+#shortcut-section .shortcut-container .shortcut .icon-container .icon-obj:focus,
+#shortcut-section .shortcut-container .shortcut .icon-container .icon-obj:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  -moz-animation-name: hvr-bob-float, hvr-bob;
+  -ms-animation-name: hvr-bob-float, hvr-bob;
+  -o-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  -moz-animation-duration: .3s, 1.5s;
+  -ms-animation-duration: .3s, 1.5s;
+  -o-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  -moz-animation-delay: 0s, .3s;
+  -ms-animation-delay: 0s, .3s;
+  -o-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  -moz-animation-timing-function: ease-out, ease-in-out;
+  -ms-animation-timing-function: ease-out, ease-in-out;
+  -o-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+  -ms-animation-iteration-count: 1, infinite;
+  -o-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  -moz-animation-direction: normal, alternate;
+  -ms-animation-direction: normal, alternate;
+  -o-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
 #shortcut-section .shortcut-container .shortcut .icon-container .lingkaran {
   display: block;
   max-width: 100%;
   height: auto;
-  position: absolute;
   z-index: 3;
-  height: 150px;
-  left: 24%;
+  height: 140px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
 }
 #shortcut-section .shortcut-container .shortcut .nama {
