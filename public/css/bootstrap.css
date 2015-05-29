@@ -15886,6 +15886,18 @@ blockquote {
 #header .yamm-content {
   background-color: #085cf2;
 }
+#header .dropdown.yamm-fw li {
+  display: block!important;
+}
+#header .dropdown.yamm-fw li.divider {
+  opacity: 0;
+}
+#header .dropdown.yamm li {
+  display: block!important;
+}
+#header .dropdown.yamm li.divider {
+  opacity: 0;
+}
 #header-placeholder {
   max-height: 150px;
   text-align: center;
