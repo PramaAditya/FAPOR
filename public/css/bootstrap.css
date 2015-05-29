@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*imported*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -15885,6 +15885,18 @@ blockquote {
 #header .yamm-content {
   background-color: #085cf2;
 }
+#header .dropdown.yamm-fw li {
+  display: block!important;
+}
+#header .dropdown.yamm-fw li.divider {
+  opacity: 0;
+}
+#header .dropdown.yamm li {
+  display: block!important;
+}
+#header .dropdown.yamm li.divider {
+  opacity: 0;
+}
 #header-placeholder {
   max-height: 150px;
   text-align: center;
@@ -15950,6 +15962,12 @@ blockquote {
 }
 .tanda-section .tanda-container .nav-pills li.active a {
   background-color: #085cf2 !important;
+}
+.nav-tabs li a {
+  border-radius: 0;
+}
+.nav-tabs li.active a {
+  border-top: 2px solid #efba00 !important;
 }
 .breadcrumb-section {
   padding-top: 50px;
@@ -17449,5 +17467,4 @@ form.signup input.form-control:focus {
   color: #fff;
   text-align: center;
 }
-
 /*# sourceMappingURL=bootstrap.css.map */
