@@ -17257,11 +17257,36 @@ hr {
 }
 .album-container {
   position: relative;
+  outline-offset: 30px;
   min-height: 40em;
+  padding-right: 40px;
+  padding-bottom: 10px;
   background-size: cover;
 }
 .album-container * {
   position: absolute;
+}
+.album-container a {
+  right: 0;
+  background: #085cf2;
+  padding: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: white;
+  font-weight: 700;
+}
+h1 {
+  position: relative;
+  background: #085cf2;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 50px;
+  bottom: 0;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: 50px;
+  display: inline;
+  color: white;
 }
 .bas-tanggal-section {
   margin-left: -15px;

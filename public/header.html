@@ -55,14 +55,15 @@
 	            <li role="presentation">
 	                <a href="#">Profil</a>
 	            </li>
-	            <li class="dropdown yamm">
+	            <li class="dropdown yamm-fw">
 	                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
 	                aria-expanded="false">Berita <span class="caret"></span></a>
 	                <ul class="dropdown-menu" role="menu">
 	                	<div class="yamm-content">
 	                	<div class="row">
 					        <ul class="col-sm-2 list-unstyled">
-					            <li>
+					            <h3>Semua Berita</h3>
+            		            <li>
 					                <a href="#">Berita Kementerian</a>
 					            </li>
 					            <li>
@@ -78,13 +79,63 @@
 					                <a href="#">Streaming</a>
 					            </li>
 					        </ul>
-					        <ul class="col-sm-4 list-unstyled">
-					            <div class="thumbnail">
-					                <img src="img/rri.jpg" alt="berita" height="150" weight="150">
-					                
+					        <ul class="col-sm-6 list-unstyled">
+					            <h3>Galeri</h3>
+					            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+					            <!-- Indicators -->
+					            <ol class="carousel-indicators">
+					              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					              <li data-target="#myCarousel" data-slide-to="1"></li>
+					              <li data-target="#myCarousel" data-slide-to="2"></li>
+					              <li data-target="#myCarousel" data-slide-to="3"></li>
+					            </ol>
+
+					            <!-- Wrapper for slides -->
+					            <div class="carousel-inner" role="listbox">
+					              <div class="item active">
+					                <img src="img\back1.gif" alt="back1">
+					                <div class="carousel-caption">
+					                  <h3><a href="#">Back1</a></h3>
+					                  <p>Panceg dina galur, moal ingkah najan awak lebur, sabab kabogoh ditikung ku batur.</p>
+					                </div>
+					              </div>
+
+					              <div class="item">
+					                <img src="img\back2.png" alt="back2">
+					                <div class="carousel-caption">
+					                  <h3><a href="#">Back2</a></h3>
+					                  <p>Panceg dina galur, moal ingkah najan awak lebur, sabab kabogoh ditikung ku batur.</p>
+					                </div>
+					              </div>
+
+					              <div class="item">
+					                <img src="img\kontesweb.jpg" alt="kontesweb">
+					                <div class="carousel-caption">
+					                  <h3><a href="#">KontesWeb</a></h3>
+					                  <p>Panceg dina galur, moal ingkah najan awak lebur, sabab kabogoh ditikung ku batur.</p>
+					                </div>
+					              </div>
+
+					              <div class="item">
+					                <img src="img\langit.jpg" alt="langit">
+					                <div class="carousel-caption">
+					                  <h3><a href="#">Langit</a></h3>
+					                  <p>Panceg dina galur, moal ingkah najan awak lebur, sabab kabogoh ditikung ku batur.</p>
+					                </div>
+					              </div>
 					            </div>
+
+					            <!-- Left and right controls -->
+					            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					            </a>
+					            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					            </a>
+					          </div>
 					        </ul>
 					        <ul class="col-sm-4 list-unstyled">
+					        	<h3>Agenda</h3>
 					            <div id="accordion" class="panel-group">
 					              <div class="panel panel-default">
 					                <div class="panel-heading">
@@ -110,6 +161,14 @@
 					                  <div class="panel-body">Tanpa FAPO, tidak ada futsal STI. </div>
 					                </div>
 					              </div>
+					              <div class="panel panel-default">
+					                <div class="panel-heading">
+					                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Pembubaran Internet Positif : 24 Juni 2015</a></h4>
+					                </div>
+					                <div id="collapseFour" class="panel-collapse collapse">
+					                  <div class="panel-body">Petisi jomblo menuntut pembukaan blokir fakku.net. </div>
+					                </div>
+					              </div>
 					            </div>
 					        </ul>
 					    </div>
@@ -123,8 +182,8 @@
 	                <ul class="dropdown-menu" role="menu">
 	                	<div class="yamm-content">
 	                	<div class="row">
-		                	<ul class="col-sm-6 list-unstyled"> 
-		                		<p><strong>Layanan</strong></p>
+		                	<ul class="col-sm-5 list-unstyled"> 
+		                		<h3>Layanan</h3>
 		                		<li>
 			                        <a href="#">Perizinan</a>
 			                    </li>
@@ -147,8 +206,8 @@
 			                        <a href="#">e-Business</a>
 			                    </li>
 			                </ul>
-							<ul class="col-sm-6 list-unstyled">
-		                    	<p><strong>Program</strong></p>
+							<ul class="col-sm-7 list-unstyled">
+		                    	<h3>Program</h3>
 			                    <li>
 			                        <a href="#">Pemberdayaan Informatika</a>
 			                    </li>
@@ -191,7 +250,7 @@
 	                	<div class="yamm-content">
 	                	<div class="row">
 		                	<ul class="col-sm-4 list-unstyled">
-		                		<p><strong>Informasi</strong></p>
+		                		<h3>Informasi</h3>
 			                    <li>
 			                        <a href="#">Statistik</a>
 			                    </li>
@@ -208,8 +267,8 @@
 			                        <a href="#">Perjanjian/MoU</a>
 			                    </li>
 			                </ul>
-			                <ul class="col-sm-4 list-unstyled">
-			                	<p><strong>Laporan</strong></p>
+			                <ul class="col-sm-5 list-unstyled">
+			                	<h3>Laporan</h3>
 			                    <li>
 			                        <a href="#">Laporan Keuangan Tahunan</a>
 			                    </li>
@@ -219,7 +278,7 @@
 			                        <a href="#">LAKIP</a>
 			                    </li>
 			                    <li class="divider"></li>
-			                    <p><strong>Rencana</strong></p>
+			                    <h3>Rencana</h3>
 			                    <li>
 			                        <a href="#">Rencana Strategis</a>
 			                    </li>
@@ -230,8 +289,8 @@
 			                        <a href="#">Rencana Anggaran</a>
 			                    </li>
 			                </ul>
-			                <ul class="col-sm-4 list-unstyled">
-			               		<p><strong>Hukum</strong></p>
+			                <ul class="col-sm-3 list-unstyled">
+			               		<h3>Hukum</h3>
 			                    <li>
 			        		        <a href="#">Regulasi (JDIH)</a>
 			            		</li>
@@ -249,7 +308,7 @@
 	                <ul class="dropdown-menu" role="menu">
 	                	<div class="yamm-content">
 	                	<div class="row">
-		                	<ul class="col-sm-4 list-unstyled">
+		                	<ul class="col-sm-8 list-unstyled">
 		                    	<div class="thumbnail">
 		                    		<a href="https://www.google.co.id/maps/place/KOMINFO/@-6.175312,106.822538,17z/data=!3m1!4b1!4m2!3m1!1s0x2e69f5d4be420899:0x24bcd87627dfb390"><img src="img/peta-kominfo.png"></a>
 		                    		<div class="caption">
@@ -257,8 +316,8 @@
 		                    		</div>
 		                    	</div>
 		                    </ul>
-		                    <ul class="col-sm-3 list-unstyled">
-		                    	<p><strong>Hubungi Kami</strong><p>
+		                    <ul class="col-sm-4 list-unstyled">
+		                    	<h3>Hubungi Kami</h3>
 		                    	<li>
 		        		        	<a href="https://id-id.facebook.com/Kemkominfo">Facebook</a>
 		            			</li>
@@ -275,26 +334,7 @@
 		            				<a href="kontak.kominfo.go.id">Kontak Kominfo</a>
 		            			</li>
 		            		</ul>
-		                    <ul class="col-sm-5 list-unstyled">
-		            			<p><strong>Kotak Saran</strong><p>
-		            				<li>
-	            						<form action="send.php">
-	            							<div class="form-group">
-			                          			<input id="inputName" type="text" placeholder="Nama" class="form-control">
-			                        		</div>
-			                        		<div class="form-group">
-			                          			<input id="inputEmail" type="password" placeholder="Email" class="form-control">
-			                        		</div>
-					                        <div class="form-group">
-					                          	<textarea placeholder="Tuliskan saran Anda..." class="form-control"></textarea>
-			                        		</div>
-			                        		<div class="form-group">
-			                          			<button type="submit" class="btn btn-success">Kirim</button>
-			                        		</div>
-				                      	</form>
-	            					</li>
-		            		</ul>
-	            	   	</div>
+		                </div>
 	            		</div>
 	            	</ul>
 	            </li>
