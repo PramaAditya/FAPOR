@@ -39,7 +39,7 @@
 	outline-offset: 30px;
 	min-height: 20em;
 	background-size: cover;
-	*{
+	.judul-album, .label{
 		position: absolute;
 	}
 	img{
@@ -48,7 +48,10 @@
 		width: 300px;
 		height: 350px;
 	}
-	a {
+	.judul-album, .judul-album>a{
+		color: white;
+	}
+	.label {
 		right: 0;
 		background: @warna-2;
 		padding: 5px;
@@ -56,6 +59,7 @@
 		margin-top: 10px;
 		color: white;
 		font-weight: 700; 
+		border-radius: 0;
 	}
 }
 }
