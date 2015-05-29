@@ -15781,6 +15781,7 @@ blockquote {
   padding-right: 15px;
   font-family: "Oswald";
   font-size: 30px;
+  font-weight: bold;
   color: #085cf2;
 }
 @media (min-width: 992px) {
@@ -15950,6 +15951,12 @@ blockquote {
 }
 .tanda-section .tanda-container .nav-pills li.active a {
   background-color: #085cf2 !important;
+}
+.nav-tabs li a {
+  border-radius: 0;
+}
+.nav-tabs li.active a {
+  border-top: 2px solid #efba00 !important;
 }
 .breadcrumb-section {
   padding-top: 50px;
