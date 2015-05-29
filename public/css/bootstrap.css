@@ -6303,7 +6303,9 @@ button.close {
 .bas-tanggal-section:before,
 .bas-tanggal-section:after,
 .bas-tanggal-container:before,
-.bas-tanggal-container:after {
+.bas-tanggal-container:after,
+#shortcut-section .shortcut-container:before,
+#shortcut-section .shortcut-container:after {
   content: " ";
   display: table;
 }
@@ -6330,7 +6332,8 @@ button.close {
 .widget-column .widget-list li:after,
 .gambar:after,
 .bas-tanggal-section:after,
-.bas-tanggal-container:after {
+.bas-tanggal-container:after,
+#shortcut-section .shortcut-container:after {
   clear: both;
 }
 .center-block {
@@ -17368,5 +17371,22 @@ hr {
 }
 .bas-berita-container h4 {
   margin-bottom: 0px;
+}
+#shortcut-section .shortcut-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+#shortcut-section .shortcut-container .shortcut {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 10em;
+}
+@media (min-width: 992px) {
+  #shortcut-section .shortcut-container .shortcut {
+    float: left;
+    width: 25%;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
