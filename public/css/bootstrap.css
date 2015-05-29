@@ -6303,7 +6303,9 @@ button.close {
 .bas-tanggal-section:before,
 .bas-tanggal-section:after,
 .bas-tanggal-container:before,
-.bas-tanggal-container:after {
+.bas-tanggal-container:after,
+#shortcut-section .shortcut-container:before,
+#shortcut-section .shortcut-container:after {
   content: " ";
   display: table;
 }
@@ -6330,7 +6332,8 @@ button.close {
 .widget-column .widget-list li:after,
 .gambar:after,
 .bas-tanggal-section:after,
-.bas-tanggal-container:after {
+.bas-tanggal-container:after,
+#shortcut-section .shortcut-container:after {
   clear: both;
 }
 .center-block {
@@ -17369,6 +17372,40 @@ hr {
 .bas-berita-container h4 {
   margin-bottom: 0px;
 }
+<<<<<<< HEAD
+#shortcut-section .shortcut-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+#shortcut-section .shortcut-container .shortcut {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 10em;
+}
+@media (min-width: 992px) {
+  #shortcut-section .shortcut-container .shortcut {
+    float: left;
+    width: 25%;
+  }
+}
+#shortcut-section .shortcut-container .shortcut .icon-shadow {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+#shortcut-section .shortcut-container .shortcut .icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+#shortcut-section .shortcut-container .shortcut .icon:hover {
+  opacity: 0;
+}
+=======
 form.signup input {
   height: 42px;
   width: 200px;
@@ -17425,4 +17462,5 @@ p.copyright {
   text-align: center;
 }
 
+>>>>>>> 06205191912640fc8b63ad58535228a8660fc261
 /*# sourceMappingURL=bootstrap.css.map */
