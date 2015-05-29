@@ -15696,6 +15696,50 @@ blockquote {
   background-color: #efba00;
   border-width: 0;
 }
+#header-mobile {
+  -webkit-trasition: all 1s ease-in;
+  -moz-trasition: all 1s ease-in;
+  -ms-trasition: all 1s ease-in;
+  -o-trasition: all 1s ease-in;
+  trasition: all 1s ease-in;
+}
+#header-mobile #logo-kominfo {
+  height: 30px;
+  margin-top: 10px;
+  float: right;
+  margin-right: 15px;
+}
+#header-mobile .navbar {
+  background-color: #085cf2;
+}
+#header-mobile .navbar-toggle {
+  padding: .2em .3em;
+}
+#header-mobile .navbar-toggle label {
+  color: white;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+#header-mobile .navbar-toggle .icon-bar {
+  background-color: white;
+}
+#header-mobile .navbar-toggle:hover {
+  background-color: #0098ff;
+}
+#header-mobile #menu-mobile {
+  background-color: #085cf2;
+}
+#header-mobile #menu-mobile a {
+  color: white;
+}
+#header-mobile #menu-mobile .caret {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+#header-mobile #menu-mobile .dropdown.open * {
+  background-color: #03245e;
+}
 #header {
   position: relative;
   height: 175px;

@@ -1,3 +1,44 @@
+#header-mobile {
+    #logo-kominfo{
+        height: 30px;
+        margin-top: 10px;
+        float: right;
+        margin-right: @grid-gutter-width/2;
+    }
+    .prefixed(trasition, all 1s ease-in);
+    .navbar {
+        background-color: @brand-primary;
+    }
+    .navbar-toggle {
+        padding: .2em .3em;
+        label {
+            color: white;
+            font-size: 1em;
+            letter-spacing: 1.5px;
+            margin: 0;
+        }
+        .icon-bar {
+            background-color: white;
+        }
+        &:hover {
+            background-color: @warna-3;
+        }
+    }
+    #menu-mobile{
+        background-color: @brand-primary;
+        a{
+            color:white;
+        }
+        .caret{
+            border-top-color: white;
+            border-bottom-color: white;
+        }
+        .dropdown.open *{
+            background-color: darken(@brand-primary, 30%)
+        }
+    }
+}
+
 #header {
     .hidden-xs;
     .hidden-sm;
@@ -6,32 +47,32 @@
     height: @baseline*7;
     @nav-item-width: 125px;
     @logo-width: 140px;
-    .kominfo-container{
+    .kominfo-container {
         .container;
-        h3{
+        h3 {
             padding-top: @baseline;
             .make-md-column(6);
             font-family: "Oswald";
             font-size: 30px;
             color: @brand-primary;
         }
-        #search{
+        #search {
             .make-md-column(3);
             .make-md-column-offset(3);
             display: inline-table;
             color: @brand-primary;
             padding-top: @baseline;
-            .col-sm-10{
+            .col-sm-10 {
                 padding-right: 0;
             }
-            .col-sm-2{
+            .col-sm-2 {
                 padding-left: 0;
             }
-            input{
+            input {
                 padding-right: 0;
                 border: 2px solid @brand-primary;
             }
-            label{
+            label {
                 font-size: 25px;
                 margin-left: 0;
                 margin-top: 5px;
