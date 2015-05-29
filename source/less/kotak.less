@@ -1,6 +1,6 @@
-@tinggi-kotak: 70em;//@box-height; //variables.less
-@warna-overlay-kotak: black;//@warna-1;
-@warna-kotak-kecil: darken(@brand-primary,10%); //darken(@warna-3,30%);
+@tinggi-kotak: @box-height; //variables.less
+@warna-overlay-kotak: black; //@warna-1;
+@warna-kotak-kecil: darken(@brand-primary, 10%); //darken(@warna-3,30%);
 @warna-title: white;
 @warna-subtitle: lighten(@warna-3, 20%); //@warna-3;
 .kotak {
@@ -10,6 +10,10 @@
 
 .overlay {
     .prefixed(transition, opacity .25s ease-in-out);
+}
+
+#grid-section{
+    padding:0;
 }
 
 // Untuk Animasi
@@ -84,7 +88,7 @@
             margin-bottom: @line-height-computed*8;
             margin-top: -(@line-height-computed/2);
             color: @warna-title;
-            font-family: @font-family-sans-serif; 
+            font-family: @font-family-sans-serif;
             font-weight: 700;
         }
         .subtitle {
@@ -109,7 +113,7 @@
 }
 
 .kotak-utama {
-    .overlay{
+    .overlay {
         opacity: 0.3;
     }
     &:hover {
@@ -160,32 +164,27 @@
     }
 }
 
-.full-md {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    .kotak-section {
-        margin-top: 0;
-        .kotak-content {
-            padding-left: 1em;
-            padding-right: 1em;
-        }
-    }
-}
-
-@media (max-width: @screen-md) {
+@media (max-width: @screen-xl) {
     .full-md {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
         padding-right: 0;
         padding-left: 0;
+        .kotak-section {
+            margin-top: 0;
+            .kotak-content {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+        }
     }
+}
+
+@media (max-width: @screen-md) {
     .kotak-utama {
         height: @tinggi-kotak/2 !important;
-        padding-top: 2em;
+        padding-top: @baseline*2;
         .title {
             margin-bottom: 1.5em!important;
         }
