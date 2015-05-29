@@ -1,7 +1,8 @@
 @warna-tanggal: @warna-3; 
 
 
-
+#latest-section .tab-pane{
+}
 .bas-tanggal-section {
 	.make-row();
     padding: 0px;
@@ -18,6 +19,11 @@
 }
 .bas-tanggal-kotak {
     .make-xs-column(2);
+    .make-sm-column(2);
+    float: left!important;
+    &::before,&::after{
+        content: "";
+    }
     padding: 0;
     height: 100px;
     display: block;
@@ -48,9 +54,14 @@
 }
 .bas-berita-container {
     .make-xs-column(10);
+    .make-sm-column(10);
+    float:left!important;
     padding-left: 10px;
     padding-bottom: 0px;
     h4 {
         margin-bottom: 0px;
+    }
+        &::before,&::after{
+        content: "";
     }
 }

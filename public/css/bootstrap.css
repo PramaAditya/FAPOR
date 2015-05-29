@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*imported*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -17402,17 +17402,28 @@ hr {
   border-bottom: 1px solid #CCCCFF;
 }
 .bas-tanggal-kotak {
-  position: relative;
   float: left;
   width: 16.66666667%;
+  position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  float: left!important;
   padding: 0;
   height: 100px;
   display: block;
   float: center;
   background-color: #0098ff;
+}
+@media (min-width: 768px) {
+  .bas-tanggal-kotak {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.bas-tanggal-kotak::before,
+.bas-tanggal-kotak::after {
+  content: "";
 }
 .bas-tanggal-angka {
   position: center;
@@ -17437,17 +17448,28 @@ hr {
   text-transform: uppercase;
 }
 .bas-berita-container {
-  position: relative;
   float: left;
   width: 83.33333333%;
+  position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  float: left!important;
   padding-left: 10px;
   padding-bottom: 0px;
 }
+@media (min-width: 768px) {
+  .bas-berita-container {
+    float: left;
+    width: 83.33333333%;
+  }
+}
 .bas-berita-container h4 {
   margin-bottom: 0px;
+}
+.bas-berita-container::before,
+.bas-berita-container::after {
+  content: "";
 }
 #shortcut-section .shortcut-container {
   margin-left: 0;
@@ -17631,5 +17653,4 @@ form.signup input.form-control:focus {
   color: #fff;
   text-align: center;
 }
-
 /*# sourceMappingURL=bootstrap.css.map */
