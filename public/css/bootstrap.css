@@ -17428,10 +17428,12 @@ hr {
   text-align: center;
   float: left;
   width: 50%;
-  position: relative;
-  min-height: 1px;
   padding-left: 0;
   padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
   min-height: 250px;
 }
 @media (min-width: 768px) {
