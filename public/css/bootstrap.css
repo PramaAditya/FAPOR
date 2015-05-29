@@ -17283,6 +17283,12 @@ hr {
 .album-container .album * {
   position: absolute;
 }
+.album-container .album img {
+  size: cover;
+  position: relative;
+  width: 300px;
+  height: 350px;
+}
 .album-container .album a {
   right: 0;
   background: #085cf2;
@@ -17306,6 +17312,7 @@ hr {
   color: white;
   margin-bottom: 12.5px;
   font-weight: 700;
+  left: 0px;
 }
 .bas-tanggal-section {
   margin-left: -15px;
