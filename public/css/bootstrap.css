@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*imported*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -15899,6 +15899,9 @@ blockquote {
 #header .navbar .nav li.active a:hover {
   background-color: #085cf2;
 }
+#header .yamm-content {
+  background-color: #085cf2;
+}
 #header-placeholder {
   max-height: 150px;
   text-align: center;
@@ -17372,7 +17375,6 @@ hr {
 .bas-berita-container h4 {
   margin-bottom: 0px;
 }
-<<<<<<< HEAD
 #shortcut-section .shortcut-container {
   margin-left: 0;
   margin-right: 0;
@@ -17405,7 +17407,6 @@ hr {
 #shortcut-section .shortcut-container .shortcut .icon:hover {
   opacity: 0;
 }
-=======
 form.signup input {
   height: 42px;
   width: 200px;
@@ -17462,5 +17463,4 @@ p.copyright {
   text-align: center;
 }
 
->>>>>>> 06205191912640fc8b63ad58535228a8660fc261
 /*# sourceMappingURL=bootstrap.css.map */
