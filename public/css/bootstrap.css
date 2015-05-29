@@ -1,8 +1,8 @@
 @charset "UTF-8";
-/*imported*/
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
+/*imported*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -17372,6 +17372,7 @@ hr {
 .bas-berita-container h4 {
   margin-bottom: 0px;
 }
+<<<<<<< HEAD
 #shortcut-section .shortcut-container {
   margin-left: 0;
   margin-right: 0;
@@ -17404,4 +17405,62 @@ hr {
 #shortcut-section .shortcut-container .shortcut .icon:hover {
   opacity: 0;
 }
+=======
+form.signup input {
+  height: 42px;
+  width: 200px;
+  border-radius: 0;
+  border: none;
+}
+form.signup button.btn {
+  font-weight: 700;
+  margin-left: 20px;
+}
+form.signup input.form-control:focus {
+  border-color: #fd680e;
+}
+/* wrapper */
+#wrapper {
+  text-align: center;
+  padding: 50px 0;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h2.title {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+h3.subtitle {
+  color: #fff;
+  font-size: 24px;
+}
+/* countdown */
+#countdown {
+  font-size: 48px;
+  color: #fff;
+  line-height: 1.1em;
+  margin: 40px 0 60px;
+}
+/* footer */
+p.copyright {
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+>>>>>>> 06205191912640fc8b63ad58535228a8660fc261
 /*# sourceMappingURL=bootstrap.css.map */

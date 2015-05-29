@@ -4,6 +4,7 @@ prototype/css/.DS_Store
 web-assets/
 other-assets/
 lain-lain/
+*.map
 *.sublime-project
 *.sublime-workspace
 *.codekit
