@@ -1181,7 +1181,7 @@ h6,
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #085cf2;
 }
 h1 small,
 h2 small,
@@ -6288,6 +6288,8 @@ button.close {
 .modal-footer:after,
 .page-tabs:before,
 .page-tabs:after,
+#header .kominfo-container:before,
+#header .kominfo-container:after,
 .kotak-section:before,
 .kotak-section:after,
 .kotak-section .kotak-container:before,
@@ -6321,6 +6323,7 @@ button.close {
 .panel-body:after,
 .modal-footer:after,
 .page-tabs:after,
+#header .kominfo-container:after,
 .kotak-section:after,
 .kotak-section .kotak-container:after,
 .kotak-section .kotak-container .kotak-big .kotak-row:after,
@@ -15566,6 +15569,22 @@ img#logo-footer {
   font-weight: normal;
   src: local('Offside Regular'), local('Offside-Regular'), url(fonts/Offside-Regular.ttf) format('ttf');
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v10/Qw6_9HvXRQGg5mMbFR3Phn-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v10/_P8jt3Y65hJ9c4AzRE0V1OvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 body {
   min-height: 100%;
   font-weight: 400;
@@ -15677,18 +15696,147 @@ blockquote {
   background-color: #efba00;
   border-width: 0;
 }
+#header-mobile {
+  -webkit-trasition: all 1s ease-in;
+  -moz-trasition: all 1s ease-in;
+  -ms-trasition: all 1s ease-in;
+  -o-trasition: all 1s ease-in;
+  trasition: all 1s ease-in;
+}
+#header-mobile #logo-kominfo {
+  height: 30px;
+  margin-top: 10px;
+  float: right;
+  margin-right: 15px;
+}
+#header-mobile .navbar {
+  background-color: #085cf2;
+}
+#header-mobile .navbar-toggle {
+  padding: .2em .3em;
+}
+#header-mobile .navbar-toggle label {
+  color: white;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+#header-mobile .navbar-toggle .icon-bar {
+  background-color: white;
+}
+#header-mobile .navbar-toggle:hover {
+  background-color: #0098ff;
+}
+#header-mobile #menu-mobile {
+  background-color: #085cf2;
+}
+#header-mobile #menu-mobile a {
+  color: white;
+}
+#header-mobile #menu-mobile .caret {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+#header-mobile #menu-mobile .dropdown.open * {
+  background-color: #03245e;
+}
 #header {
   position: relative;
   height: 175px;
-  text-align: center;
 }
-#header * {
-  color: white;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+@media (max-width: 767px) {
+  #header {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #header {
+    display: none !important;
+  }
+}
+#header .kominfo-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #header .kominfo-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #header .kominfo-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  #header .kominfo-container {
+    width: 1170px;
+  }
+}
+#header .kominfo-container > .navbar-header,
+#header .kominfo-container > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  #header .kominfo-container > .navbar-header,
+  #header .kominfo-container > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+#header .kominfo-container h3 {
+  padding-top: 25px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Oswald";
+  font-size: 30px;
+  color: #085cf2;
+}
+@media (min-width: 992px) {
+  #header .kominfo-container h3 {
+    float: left;
+    width: 50%;
+  }
+}
+#header .kominfo-container #search {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-table;
+  color: #085cf2;
+  padding-top: 25px;
+}
+@media (min-width: 992px) {
+  #header .kominfo-container #search {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  #header .kominfo-container #search {
+    margin-left: 25%;
+  }
+}
+#header .kominfo-container #search .col-sm-10 {
+  padding-right: 0;
+}
+#header .kominfo-container #search .col-sm-2 {
+  padding-left: 0;
+}
+#header .kominfo-container #search input {
+  padding-right: 0;
+  border: 2px solid #085cf2;
+}
+#header .kominfo-container #search label {
+  font-size: 25px;
+  margin-left: 0;
+  margin-top: 5px;
 }
 #header #logo {
   max-height: 140px;
@@ -15716,6 +15864,14 @@ blockquote {
   text-align: center;
   margin-bottom: 0;
   background-color: #085cf2;
+}
+#header .navbar * {
+  color: white;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 #header .navbar .nav {
   float: none;
@@ -17101,16 +17257,33 @@ hr {
 }
 .album-container {
   position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+@media (min-width: 992px) {
+  .album-container {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .album-container {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.album-container .album {
+  position: relative;
   outline-offset: 30px;
-  min-height: 40em;
-  padding-right: 40px;
-  padding-bottom: 10px;
+  min-height: 20em;
   background-size: cover;
 }
-.album-container * {
+.album-container .album * {
   position: absolute;
 }
-.album-container a {
+.album-container .album a {
   right: 0;
   background: #085cf2;
   padding: 5px;
@@ -17119,18 +17292,20 @@ hr {
   color: white;
   font-weight: 700;
 }
-h1 {
+.judul-album {
   position: relative;
   background: #085cf2;
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-right: 50px;
   bottom: 0;
   letter-spacing: 0px;
   word-spacing: 0px;
-  line-height: 50px;
+  line-height: 25px;
   display: inline;
   color: white;
+  margin-bottom: 12.5px;
+  font-weight: 700;
 }
 .bas-tanggal-section {
   margin-left: -15px;
