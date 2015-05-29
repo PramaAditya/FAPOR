@@ -113,11 +113,11 @@
         background-color: @brand-primary;
         .nav {
             float: none;
-            li {
+            .menu-link {
                 float: none;
                 display: inline-block;
                 min-width: @nav-item-width;
-                a {
+                & > a {
                     font-size: 200;
                     text-transform: uppercase;
                     letter-spacing: 1.5px;
@@ -137,8 +137,17 @@
             }
         }
     }
-    .yamm-content {
-        background-color: @warna-2;
+    .dropdown-menu {
+        background-color: darken(@warna-2, 30%);
+        border: 0;
+        border-radius: 0;
+        h3{
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid white;
+            display: inline-block;
+        }
     }
     .dropdown.yamm-fw,.dropdown.yamm{
 
@@ -162,6 +171,11 @@
     #accordion {
         .panel-heading{
             background-color: @warna-1;
+            padding:.3em;
+            a:hover{
+                background: none;
+                text-decoration: none!important;
+            }
         }
     }
 
