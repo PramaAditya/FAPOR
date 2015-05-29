@@ -50,10 +50,12 @@
     .kominfo-container {
         .container;
         h3 {
-            padding-top: @baseline;
+            padding-top: @baseline/2;
             .make-md-column(6);
             font-family: "Oswald";
             font-size: 30px;
+            line-height: 30px;
+            font-weight: bold;
             color: @brand-primary;
         }
         #search {
@@ -111,11 +113,11 @@
         background-color: @brand-primary;
         .nav {
             float: none;
-            li {
+            .menu-link {
                 float: none;
                 display: inline-block;
                 min-width: @nav-item-width;
-                a {
+                & > a {
                     font-size: 200;
                     text-transform: uppercase;
                     letter-spacing: 1.5px;
@@ -135,6 +137,48 @@
             }
         }
     }
+    .dropdown-menu {
+        background-color: darken(@warna-2, 30%);
+        border: 0;
+        border-radius: 0;
+        h3{
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid white;
+            display: inline-block;
+        }
+    }
+    .dropdown.yamm-fw,.dropdown.yamm{
+
+        li{
+            display: block;
+            &.divider{
+                opacity: 0;
+            }
+        }
+
+        ol.carousel-indicators{
+            li{
+                display: inline-block;
+            }
+        }
+    }
+   
+    .panel  {
+        background-color: @warna-3;
+    }
+    #accordion {
+        .panel-heading{
+            background-color: @warna-1;
+            padding:.3em;
+            a:hover{
+                background: none;
+                text-decoration: none!important;
+            }
+        }
+    }
+
 }
 
 #header-placeholder {
@@ -197,6 +241,16 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.nav-tabs{
+    li {
+        
+        a{border-radius: 0;}
+        &.active a{
+            border-top: 2px solid @warna-4 !important; 
         }
     }
 }

@@ -6,51 +6,51 @@
     margin-left: .3em;
     margin-right: .3em;
 }
-#title {
-    background-color: @warna-5;
-    background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
-    min-height: 12em;
-    h1 {
-        color: white;
-        margin-top: 1.35em;
-        margin-bottom: 0.5em;
-    }
-    text-align: center;
-}
+// #title {
+//     background-color: @warna-5;
+//     background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
+//     min-height: 12em;
+//     h1 {
+//         color: white;
+//         margin-top: 1.35em;
+//         margin-bottom: 0.5em;
+//     }
+//     text-align: center;
+// }
 
 
-.page-tabs {
-    .make-row();
-    .container {
-        .make-xs-column(12);
-        .nav-tabs {
-            text-align: center;
-            border: 0;
-            > li {
-                float: none;
-                display: inline-block;
-                *display: inline;
-                /* ie7 fix */
+// .page-tabs {
+//     .make-row();
+//     .container {
+//         .make-xs-column(12);
+//         .nav-tabs {
+//             text-align: center;
+//             border: 0;
+//             > li {
+//                 float: none;
+//                 display: inline-block;
+//                 *display: inline;
+//                  ie7 fix 
                 
-                zoom: 1;
-                /* hasLayout ie7 trigger */
+//                 zoom: 1;
+//                 /* hasLayout ie7 trigger */
                 
-                a {
-                    border: 0;
-                    border-radius: @border-largest-radius @border-smallest-radius 0 @border-smallest-radius;
-                }
-            }
-            > li:not(.active) {
-                a {
-                    color: white;
-                    &:hover, &:focus {
-                        background-color: rgba(255, 255, 255, 0.3);
-                    }
-                }
-            }
-        }
-    }
-}
+//                 a {
+//                     border: 0;
+//                     border-radius: @border-largest-radius @border-smallest-radius 0 @border-smallest-radius;
+//                 }
+//             }
+//             > li:not(.active) {
+//                 a {
+//                     color: white;
+//                     &:hover, &:focus {
+//                         background-color: rgba(255, 255, 255, 0.3);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
 
@@ -69,5 +69,71 @@
 }
 
 .section{
-    padding-top: 3em;
+    padding-top: @baseline*2;
+}
+#latest-section{
+    padding-top: 0;
+    background-color: white;//@odd-section-bg;
+    .row{
+        margin-top: 0;
+    }
+    .nav-tabs{
+        margin-left: 0;
+        li.active a{
+            background-color: white;//@odd-section-bg;
+            font-weight: 700;
+            color: @headings-color;
+        }
+        li a{
+            padding-top: 0;
+            padding-bottom: 0;
+            line-height: @baseline*2;
+            font-size: @font-size-h5;
+            text-transform: uppercase;
+            font-family: @headings-font-family;
+            letter-spacing: 1.5px;
+            color: @text-color;
+            @media (max-width:@screen-xs) {
+              padding-left: 5px;
+              padding-right: 5px; 
+              font-size: 13px;
+              letter-spacing: 0; 
+            }
+        }
+    }
+}
+
+.twitter-header{
+    *{
+        margin-bottom: 0;
+        line-height: (@baseline*2)-2;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 2px solid @warna-3;
+    }
+}
+
+#links-section{
+    padding: @baseline;
+    .hidden-xs;
+    .container{
+        //padding: 0;
+    }
+    background-color: @odd-section-bg;
+    .links{
+        margin: 0;
+        //padding: 0;
+        float: none;
+        .make-row(0);
+        .list-unstyled;
+        .text-center;
+        .link{
+            .make-sm-column(2);
+            text-align: center;
+            float: none;
+            @media (min-width:@screen-sm) {
+                width: 20%!important;
+            }
+        }
+    }
 }
