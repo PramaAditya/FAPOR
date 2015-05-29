@@ -15905,28 +15905,37 @@ blockquote {
 #header .navbar .nav {
   float: none;
 }
-#header .navbar .nav li {
+#header .navbar .nav .menu-link {
   float: none;
   display: inline-block;
   min-width: 125px;
 }
-#header .navbar .nav li a {
+#header .navbar .nav .menu-link > a {
   font-size: 200;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
-#header .navbar .nav li a:hover {
+#header .navbar .nav .menu-link > a:hover {
   background-color: #efba00;
 }
-#header .navbar .nav li.active a {
+#header .navbar .nav .menu-link.active a {
   border-top: 5px solid #efba00;
   padding-top: 7.5px;
 }
-#header .navbar .nav li.active a:hover {
+#header .navbar .nav .menu-link.active a:hover {
   background-color: #085cf2;
 }
-#header .yamm-content {
-  background-color: #085cf2;
+#header .dropdown-menu {
+  background-color: #03245e;
+  border: 0;
+  border-radius: 0;
+}
+#header .dropdown-menu h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid white;
+  display: inline-block;
 }
 #header .dropdown.yamm-fw li,
 #header .dropdown.yamm li {
@@ -15945,6 +15954,11 @@ blockquote {
 }
 #header #accordion .panel-heading {
   background-color: #0303af;
+  padding: .3em;
+}
+#header #accordion .panel-heading a:hover {
+  background: none;
+  text-decoration: none!important;
 }
 #header-placeholder {
   max-height: 150px;
