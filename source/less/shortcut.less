@@ -1,21 +1,42 @@
-#shortcut-section{
-	.shortcut-container{
-		.make-row(0);
-		.shortcut{
-			.make-md-column(3,0);
-			// min-height: 10em;
-			//background-color: red;
-			.icon-shadow {
-				.img-responsive;
-				position: absolute;
-			}
-			.icon{
-				.prefixed(transition, all .1s linear);
-				.icon-shadow;
-				&:hover{
-					opacity: 0;
-				}
-			}
-		}
-	}
+#shortcut-section {
+    .shortcut-container {
+        .make-row(0);
+        .shortcut {
+        	text-align: center;
+        	.make-xs-column(6,0);
+            .make-sm-column(3,0);
+            min-height: @baseline*10;
+            //background-color: red;
+            .icon-container {
+            	height: 150px;
+                .icon-shadow {
+                    .img-responsive;
+                    position: absolute;
+                    z-index: 3;
+                    height: 150px;
+                    left: 24%;
+                    //right: 50%;
+                }
+                .icon-obj {
+                    .prefixed(transition, all .1s linear);
+                    .icon-shadow;
+                    &:hover {
+                        opacity: 0;
+                    }
+                    z-index: 4;
+                }
+                .lingkaran {
+                    .icon-shadow;
+                    z-index: 1;
+                }
+            }
+            .nama{
+            	margin-top: @baseline/2;
+            	margin-bottom: 0;
+            	font-weight: 700;
+            	text-transform: uppercase;
+            	letter-spacing: 1.5px;
+            }
+        }
+    }
 }

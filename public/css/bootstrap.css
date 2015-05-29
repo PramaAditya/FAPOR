@@ -6286,6 +6286,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
+#links-section .links:before,
+#links-section .links:after,
 #header .kominfo-container:before,
 #header .kominfo-container:after,
 .kotak-section:before,
@@ -6322,6 +6324,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
+#links-section .links:after,
 #header .kominfo-container:after,
 .kotak-section:after,
 .kotak-section .kotak-container:after,
@@ -15351,11 +15354,49 @@ body {
   text-transform: uppercase;
   border-bottom: 2px solid #0098ff;
 }
+#links-section {
+  background-color: #c9dcfd;
+}
+@media (max-width: 767px) {
+  #links-section {
+    display: none !important;
+  }
+}
+#links-section .links {
+  float: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+#links-section .links .link {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  float: none;
+}
+@media (min-width: 768px) {
+  #links-section .links .link {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  #links-section .links .link {
+    width: 20%!important;
+  }
+}
 #footer {
   margin-top: 50px;
   background-color: #085cf2;
   padding-top: 25px;
   padding-bottom: 50px;
+}
+#footer.at-home {
+  margin-top: 0;
 }
 #footer * {
   color: white;
@@ -17381,24 +17422,34 @@ hr {
   margin-right: 0;
 }
 #shortcut-section .shortcut-container .shortcut {
+  text-align: center;
+  float: left;
+  width: 50%;
   position: relative;
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
+  min-height: 250px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #shortcut-section .shortcut-container .shortcut {
     float: left;
     width: 25%;
   }
 }
-#shortcut-section .shortcut-container .shortcut .icon-shadow {
+#shortcut-section .shortcut-container .shortcut .icon-container {
+  height: 150px;
+}
+#shortcut-section .shortcut-container .shortcut .icon-container .icon-shadow {
   display: block;
   max-width: 100%;
   height: auto;
   position: absolute;
+  z-index: 3;
+  height: 150px;
+  left: 24%;
 }
-#shortcut-section .shortcut-container .shortcut .icon {
+#shortcut-section .shortcut-container .shortcut .icon-container .icon-obj {
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   -ms-transition: all 0.1s linear;
@@ -17408,9 +17459,30 @@ hr {
   max-width: 100%;
   height: auto;
   position: absolute;
+  z-index: 3;
+  height: 150px;
+  left: 24%;
+  z-index: 4;
 }
-#shortcut-section .shortcut-container .shortcut .icon:hover {
+#shortcut-section .shortcut-container .shortcut .icon-container .icon-obj:hover {
   opacity: 0;
+}
+#shortcut-section .shortcut-container .shortcut .icon-container .lingkaran {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  height: 150px;
+  left: 24%;
+  z-index: 1;
+}
+#shortcut-section .shortcut-container .shortcut .nama {
+  margin-top: 12.5px;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 form.signup input {
   height: 42px;
