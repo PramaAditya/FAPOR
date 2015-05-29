@@ -15902,6 +15902,9 @@ blockquote {
 #header .panel {
   background-color: #0098ff;
 }
+#header #accordion .panel-heading {
+  background-color: #0303af;
+}
 #header-placeholder {
   max-height: 150px;
   text-align: center;
