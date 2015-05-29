@@ -14,7 +14,6 @@
   <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/jasny-bootstrap.js"></script>
-  <script type="text/javascript" src="js/snap.svg-min.js"></script>
   <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <!-- <link href="css/kotak.css" rel="stylesheet" type="text/css"> -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -52,6 +51,7 @@
     </ul>
   </div>
 </header>
+<div class="section">
 <div class="container">
     <div class="kotak-section">
       <div class="kotak-container">
@@ -100,10 +100,14 @@
       </div>
     </div>
 </div>
+</div>
 <div class="section" id="shortcut-section">
   <div class="container">
     <div class="shortcut-container">
-      <div class="shortcut" id="domain"></div>
+      <div class="shortcut" id="domain">
+        <img class="icon-shadow" src="img/icons/tv-shad.svg"></img>
+                <img class="icon" src="img/icons/tv.svg"></img>
+      </div>
       <div class="shortcut" id="statistik"></div>
       <div class="shortcut" id="tv"></div>
       <div class="shortcut" id="beasiswa"></div>
@@ -114,10 +118,6 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-  var s = Snap("#domain");
-  var bigCircle = s.circle(150, 150, 100);
-</script>
 </body>
 
 </html>

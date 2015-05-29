@@ -17389,4 +17389,19 @@ hr {
     width: 25%;
   }
 }
+#shortcut-section .shortcut-container .shortcut .icon-shadow {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+#shortcut-section .shortcut-container .shortcut .icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+#shortcut-section .shortcut-container .shortcut .icon:hover {
+  opacity: 0;
+}
 /*# sourceMappingURL=bootstrap.css.map */
