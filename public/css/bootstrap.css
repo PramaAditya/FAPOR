@@ -15940,6 +15940,9 @@ blockquote {
 #header .dropdown.yamm ol.carousel-indicators li {
   display: inline-block;
 }
+#header .panel {
+  background-color: #0098ff;
+}
 #header-placeholder {
   max-height: 150px;
   text-align: center;
