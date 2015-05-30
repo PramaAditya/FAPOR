@@ -15775,6 +15775,10 @@ blockquote {
   font-style: italic;
   color: #0096da;
 }
+#header .kominfo-container h3 a:hover {
+  color: #0061ae;
+  text-decoration: none;
+}
 #header .kominfo-container #search {
   position: relative;
   min-height: 1px;
@@ -16378,6 +16382,7 @@ blockquote {
   -moz-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  padding-bottom: 50px;
 }
 .widget-column {
   -webkit-animation-duration: 1s;
@@ -17877,6 +17882,25 @@ div.hitung-mundur {
 }
 .breadcrumb-section.archive .breadcrumb-container {
   margin-bottom: 0;
+}
+.error-background {
+  min-height: 650px;
+}
+.error-section {
+  background-color: #0096da;
+}
+.error-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.error-actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.tombol {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
