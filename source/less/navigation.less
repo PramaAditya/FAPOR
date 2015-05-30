@@ -162,16 +162,24 @@
         }
         a:hover {
             text-decoration: none;
-            background-color: @warna-4;
+            background-color: @warna-5;
         }
     }
     .dropdown.yamm-fw,
     .dropdown.yamm {
+        .list-unstyled{
+            list-style-image: url('img/list.png')!important;
+        }
         li {
             display: block;
             &.divider {
                 opacity: 0;
+
             }
+            &:before{
+            }
+            margin-top: @baseline/4;
+            margin-bottom: @baseline/2;
         }
         ol.carousel-indicators {
             li {
