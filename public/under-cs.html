@@ -27,25 +27,25 @@
 
 <body>
  <!-- Taroh kode diantara <body></body> dari Pingendo di sini -->
-   <nav id="header-placeholder">
-    <img class="img-responsive" src="img/Header-tua.png">
-  </nav>
  <div id="wrapper" style="background-image: url('img/I17.jpg');">
-		<div class="container">
+		<div class="kotakwaktu">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12">
-					<h2 class="title">Under Construction</h1>
+					<h2 class="title">Under Construction</h2>
 					<h3 class="subtitle">Halaman Website ini sedang dibangun dan akan selesai dalam waktu...</h2>
-					<div id="countdown"></div>
+          <div class="section" style="background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);">
+            <div class="container">
+      				<div id="countdown">    
+              </div>
+            </div>  
+          </div>
 					<form class="form-inline signup" role="form">
 					  <div class="form-group">
 					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukkan alamat email">
 					  </div>  
 					  <button type="button" class="btn btn-default btn-md btn-accent">Ingatkan Saya!</button>
-					</form>		
-					
-				</div>
-				
+					</form>					
+				</div>		
 			</div>
 			<div class="row">
 				<div class="col-lg-6 col-lg-offset-3">
@@ -54,11 +54,11 @@
 			</div>		
 		</div>
 	</div>
-	<script type="text/javascript">
+<script type="text/javascript">
   $('#countdown').countdown('2016/01/01', function(event) {
-    $(this).html(event.strftime('<p class="date">%w Minggu  %d Hari</p> <p class"time">%H:%M:%S</p>'));
+    $(this).html(event.strftime('<div class="hitung-mundur"><h3 class="hitung">%w</h3> <p class="hitung">Minggu</p></div> <div class="hitung-mundur"><h3 class="hitung">%d</h3> <p class="hitung">Hari</p></div> <div class="hitung-mundur"><h3 class="hitung">%H</h3> <p class="hitung">Jam</p></div> <div class="hitung-mundur"><h3 class="hitung">%M</h3> <p class="hitung">Menit</p></div> <div class="hitung-mundur"><h3 class="hitung">%S</h3> <p class="hitung">Detik</p></div>'));
   });
-	</script>
+</script>	
 </body>
 
 </html>

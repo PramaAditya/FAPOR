@@ -3,11 +3,13 @@ form.signup input {
     width: 200px;
     border-radius: 0;
     border: none;
+    margin-top: 20px;
 }
 
 form.signup button.btn {
     font-weight: 700;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 form.signup input.form-control:focus {
@@ -32,7 +34,7 @@ form.signup input.form-control:focus {
     -o-background-size: cover;
     background-size: cover;
     h2.title {
-        margin-top: 30px;
+        margin-top: 40px;
         margin-bottom: 40px;
         color: #fff;
         font-size: @baseline*2;
@@ -45,6 +47,24 @@ form.signup input.form-control:focus {
         color: #fff;
         font-size: 24px;
     }
+    h3.hitung {
+        color: #fff;
+        font-size: 140px;
+        padding: 0px;
+        margin-bottom: 1px;
+        font-family: @headings-font-family;
+        font-weight: 200;
+        line-height: 140px;
+    }
+    p.hitung {
+        padding: 0;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 30px;
+        font-family: @headings-font-family;
+        text-transform: uppercase!important;
+        letter-spacing: 1.5px;
+    }
     /* countdown */
     
     #countdown {
@@ -53,6 +73,7 @@ form.signup input.form-control:focus {
         line-height: 1.1em;
         margin: 40px 0 60px;
     }
+
     /* footer */
     
     p.copyright {
@@ -60,4 +81,15 @@ form.signup input.form-control:focus {
         color: #fff;
         text-align: center;
     }
+}
+
+div.hitung-mundur {
+    .make-sm-column(2);
+    .make-xs-column(4);
+    min-width: 20%;
+}
+
+.kotakwaktu {
+    margin-left: 0;
+    margin-right: 0;
 }
