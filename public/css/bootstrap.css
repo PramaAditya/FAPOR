@@ -6305,7 +6305,9 @@ button.close {
 .bas-tanggal-container:before,
 .bas-tanggal-container:after,
 #shortcut-section .shortcut-container:before,
-#shortcut-section .shortcut-container:after {
+#shortcut-section .shortcut-container:after,
+.archives:before,
+.archives:after {
   content: " ";
   display: table;
 }
@@ -6333,7 +6335,8 @@ button.close {
 .gambar:after,
 .bas-tanggal-section:after,
 .bas-tanggal-container:after,
-#shortcut-section .shortcut-container:after {
+#shortcut-section .shortcut-container:after,
+.archives:after {
   clear: both;
 }
 .center-block {
@@ -17815,5 +17818,147 @@ form.signup input.form-control:focus {
   margin-top: 50px;
   color: #fff;
   text-align: center;
+}
+#archive-section {
+  padding: 0;
+}
+#archive-section .section-name {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid #085cf2;
+  margin: 0;
+}
+.archives {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 0;
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.archives .archive {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px solid black;
+  min-height: 5px;
+  padding-bottom: 12.5px;
+  padding-top: 12.5px;
+}
+@media (min-width: 1200px) {
+  .archives .archive {
+    float: left;
+    width: 100%;
+  }
+}
+.archives .thumbnail {
+  position: relative;
+  float: left;
+  width: 8.33333333%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  border: 0;
+}
+.archives .info {
+  position: relative;
+  float: left;
+  width: 91.66666667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.archives .judul {
+  margin: 0;
+  font-size: 19px;
+  line-height: 25px;
+}
+.archives .tanggal {
+  margin: 0;
+  line-height: 25px;
+}
+.archives .deskripsi {
+  font-size: 13px;
+  margin: 0;
+}
+.archives .read-more {
+  float: right;
+  font-size: 13px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding-right: 2.2em;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.archives .read-more:before {
+  content: "\f138";
+  position: absolute;
+  right: 1em;
+  padding: 0 1px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -ms-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.archives .read-more:hover:before,
+.archives .read-more:focus:before,
+.archives .read-more:active:before {
+  -webkit-transform: translateX(4px);
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -o-transform: translateX(4px);
+  transform: translateX(4px);
+}
+.pagination-container {
+  text-align: center;
+  padding-top: 12.5px;
+}
+.pagination-container .pagination {
+  margin: 0;
+  float: none;
+}
+.pagination-container .pagination a {
+  border: 0px;
+}
+.breadcrumb-section.archive {
+  padding-bottom: 0;
+}
+.breadcrumb-section.archive .breadcrumb-container {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=bootstrap.css.map */
