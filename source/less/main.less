@@ -5,6 +5,15 @@
 .album .judul-album, .album .label{
 .grow;
 }
+
+.img-contain{
+    .make-row();
+    img{
+        .make-lg-column(8);
+        .make-lg-column-offset(2);
+    }
+    margin-bottom: @baseline*2;
+}
 .modal-content{
     border-radius:0;
     .modal-header{

@@ -6286,6 +6286,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
+.img-contain:before,
+.img-contain:after,
 #links-section .links:before,
 #links-section .links:after,
 #header .kominfo-container:before,
@@ -6326,6 +6328,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
+.img-contain:after,
 #links-section .links:after,
 #header .kominfo-container:after,
 .kotak-section:after,
@@ -15069,6 +15072,28 @@ body {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
+.img-contain {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 50px;
+}
+.img-contain img {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .img-contain img {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .img-contain img {
+    margin-left: 16.66666667%;
+  }
+}
 .modal-content {
   border-radius: 0;
 }
@@ -15994,6 +16019,7 @@ blockquote {
   border-radius: 0;
 }
 .tanda-section .tanda-container {
+  z-index: 0;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -16633,8 +16659,8 @@ blockquote {
   padding-top: 75px;
 }
 .content-column.single .judul.nav-fix#sejarah {
-  margin-top: -250px;
-  padding-top: 250px;
+  margin-top: -125px;
+  padding-top: 125px;
 }
 @media (max-width: 480px) {
   .content-column.single .judul.nav-fix#sejarah {
