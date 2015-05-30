@@ -1,5 +1,5 @@
 #header-mobile {
-    #logo-kominfo{
+    #logo-kominfo {
         height: 30px;
         margin-top: 10px;
         float: right;
@@ -24,16 +24,16 @@
             background-color: @warna-3;
         }
     }
-    #menu-mobile{
+    #menu-mobile {
         background-color: @brand-primary;
-        a{
-            color:white;
+        a {
+            color: white;
         }
-        .caret{
+        .caret {
             border-top-color: white;
             border-bottom-color: white;
         }
-        .dropdown.open *{
+        .dropdown.open * {
             background-color: darken(@brand-primary, 30%)
         }
     }
@@ -101,7 +101,7 @@
     .navbar {
         * {
             color: white;
-            .prefixed(transition, all .25s ease-in-out);
+            .prefixed(transition, all .15s ease-in-out);
         }
         position: absolute;
         border: 0;
@@ -126,7 +126,7 @@
                     }
                 }
                 &.active {
-                    a {
+                    > a {
                         border-top: 5px solid @warna-4;
                         padding-top: 7.5px;
                         &:hover {
@@ -141,44 +141,104 @@
         background-color: darken(@warna-2, 30%);
         border: 0;
         border-radius: 0;
-        h3{
+        h3 {
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             border-bottom: 1px solid white;
             display: inline-block;
         }
+        a:hover {
+            text-decoration: none;
+            background-color: @warna-4;
+        }
     }
-    .dropdown.yamm-fw,.dropdown.yamm{
-
-        li{
+    .dropdown.yamm-fw,
+    .dropdown.yamm {
+        li {
             display: block;
-            &.divider{
+            &.divider {
                 opacity: 0;
             }
         }
-
-        ol.carousel-indicators{
-            li{
+        ol.carousel-indicators {
+            li {
                 display: inline-block;
             }
         }
     }
-   
-    .panel  {
+    .panel {
         background-color: @warna-3;
     }
     #accordion {
-        .panel-heading{
+        .panel-heading {
             background-color: @warna-1;
-            padding:.3em;
-            a:hover{
+            padding: .3em;
+            a:hover {
                 background: none;
                 text-decoration: none!important;
             }
         }
     }
+    .bas-tanggal-container {
+        .bas-tanggal-kotak {
+            background: none;
+            .bas-tanggal-angka {
+                font-size: 3.3333em;
+            }
+        }
+        p {
+            line-height: @baseline;
+            margin: 0;
+        }
+        &:hover {
+            background-color: @warna-4;
+        }
+        &.secondary {
+            .bas-tanggal-kotak {
+                height: auto;
+            }
+            .bas-tanggal-angka {
+                font-size: 2.5em;
+                line-height: @baseline*1.5;
+            }
+            .bas-tanggal-bulan {
+                font-size: 1.5em;
+            }
+            h4 {
+                font-size: @font-size-h5;
+                font-weight: 700;
+            }
+            p {
+                font-size: @font-size-h6;
+                line-height: @line-height-base;
+            }
+        }
+    }
+}
 
+#header {
+    .download-column {
+        border-left: 1px solid white;
+        padding-top: @baseline*1;
+        padding-bottom: @baseline*1;
+        h3 {
+            text-align: center;
+            display: block;
+            border: 0;
+        }
+        .glyphicon {
+            .grow;
+            font-size: 175px;
+            line-height: 175px;
+            display: block;
+            text-align: center;
+            margin: 0;
+            &:hover {
+                color: @warna-4;
+            }
+        }
+    }
 }
 
 #header-placeholder {
@@ -245,12 +305,13 @@
     }
 }
 
-.nav-tabs{
+.nav-tabs {
     li {
-        
-        a{border-radius: 0;}
-        &.active a{
-            border-top: 2px solid @warna-4 !important; 
+        a {
+            border-radius: 0;
+        }
+        &.active a {
+            border-top: 2px solid @warna-4 !important;
         }
     }
 }

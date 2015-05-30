@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*imported*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -15320,14 +15320,25 @@ body {
   }
 }
 .section {
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-#latest-section {
-  padding-top: 0;
-  background-color: white;
+.section .section-name {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#shortcut-section {
+  padding-bottom: 29px;
 }
 #latest-section .row {
   margin-top: 0;
+  margin-bottom: 18px;
 }
 #latest-section .nav-tabs {
   margin-left: 0;
@@ -15340,7 +15351,7 @@ body {
 #latest-section .nav-tabs li a {
   padding-top: 0;
   padding-bottom: 0;
-  line-height: 50px;
+  line-height: 47px;
   font-size: 15px;
   text-transform: uppercase;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -15363,7 +15374,8 @@ body {
   border-bottom: 2px solid #0098ff;
 }
 #links-section {
-  padding: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #c9dcfd;
 }
 @media (max-width: 767px) {
@@ -15381,12 +15393,43 @@ body {
   text-align: center;
 }
 #links-section .links .link {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
   float: none;
+  height: 100px;
+}
+#links-section .links .link:hover,
+#links-section .links .link:focus,
+#links-section .links .link:active {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  -moz-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  -ms-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  -o-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 @media (min-width: 768px) {
   #links-section .links .link {
@@ -15398,6 +15441,13 @@ body {
   #links-section .links .link {
     width: 20%!important;
   }
+}
+#links-section .links .link img {
+  display: inline;
+}
+#links-section .links .link #bp3ti {
+  height: 100%;
+  width: auto;
 }
 #footer {
   margin-top: 50px;
@@ -15906,11 +15956,11 @@ blockquote {
 }
 #header .navbar * {
   color: white;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 #header .navbar .nav {
   float: none;
@@ -15928,11 +15978,11 @@ blockquote {
 #header .navbar .nav .menu-link > a:hover {
   background-color: #efba00;
 }
-#header .navbar .nav .menu-link.active a {
+#header .navbar .nav .menu-link.active > a {
   border-top: 5px solid #efba00;
   padding-top: 7.5px;
 }
-#header .navbar .nav .menu-link.active a:hover {
+#header .navbar .nav .menu-link.active > a:hover {
   background-color: #085cf2;
 }
 #header .dropdown-menu {
@@ -15946,6 +15996,10 @@ blockquote {
   letter-spacing: 1.5px;
   border-bottom: 1px solid white;
   display: inline-block;
+}
+#header .dropdown-menu a:hover {
+  text-decoration: none;
+  background-color: #efba00;
 }
 #header .dropdown.yamm-fw li,
 #header .dropdown.yamm li {
@@ -15969,6 +16023,87 @@ blockquote {
 #header #accordion .panel-heading a:hover {
   background: none;
   text-decoration: none!important;
+}
+#header .bas-tanggal-container .bas-tanggal-kotak {
+  background: none;
+}
+#header .bas-tanggal-container .bas-tanggal-kotak .bas-tanggal-angka {
+  font-size: 3.3333em;
+}
+#header .bas-tanggal-container p {
+  line-height: 25px;
+  margin: 0;
+}
+#header .bas-tanggal-container:hover {
+  background-color: #efba00;
+}
+#header .bas-tanggal-container.secondary .bas-tanggal-kotak {
+  height: auto;
+}
+#header .bas-tanggal-container.secondary .bas-tanggal-angka {
+  font-size: 2.5em;
+  line-height: 37.5px;
+}
+#header .bas-tanggal-container.secondary .bas-tanggal-bulan {
+  font-size: 1.5em;
+}
+#header .bas-tanggal-container.secondary h4 {
+  font-size: 15px;
+  font-weight: 700;
+}
+#header .bas-tanggal-container.secondary p {
+  font-size: 13px;
+  line-height: 1.66666667;
+}
+#header .download-column {
+  border-left: 1px solid white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#header .download-column h3 {
+  text-align: center;
+  display: block;
+  border: 0;
+}
+#header .download-column .glyphicon {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -ms-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  font-size: 175px;
+  line-height: 175px;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+#header .download-column .glyphicon:hover,
+#header .download-column .glyphicon:focus,
+#header .download-column .glyphicon:active {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#header .download-column .glyphicon:hover {
+  color: #efba00;
 }
 #header-placeholder {
   max-height: 150px;
@@ -16043,8 +16178,19 @@ blockquote {
   border-top: 2px solid #efba00 !important;
 }
 .breadcrumb-section {
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   padding-top: 0;
+}
+.breadcrumb-section .section-name {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 .breadcrumb-container {
   position: relative;
@@ -17479,6 +17625,7 @@ hr {
 }
 .bas-berita-container h4 {
   margin-bottom: 0px;
+  font-weight: 700;
 }
 .bas-berita-container::before,
 .bas-berita-container::after {
@@ -17500,6 +17647,9 @@ hr {
   padding-right: 20px;
   min-height: 250px;
 }
+#shortcut-section .shortcut-container .shortcut * {
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   #shortcut-section .shortcut-container .shortcut {
     float: left;
@@ -17507,14 +17657,14 @@ hr {
   }
 }
 #shortcut-section .shortcut-container .shortcut .icon-container {
-  height: 140px;
+  height: 150px;
 }
 #shortcut-section .shortcut-container .shortcut .icon-container .icon-shadow {
   display: block;
   max-width: 100%;
   height: auto;
   z-index: 3;
-  height: 140px;
+  height: 150px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -17531,7 +17681,7 @@ hr {
   max-width: 100%;
   height: auto;
   z-index: 3;
-  height: 140px;
+  height: 150px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -17594,7 +17744,7 @@ hr {
   max-width: 100%;
   height: auto;
   z-index: 3;
-  height: 140px;
+  height: 150px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -17666,5 +17816,4 @@ form.signup input.form-control:focus {
   color: #fff;
   text-align: center;
 }
-
 /*# sourceMappingURL=bootstrap.css.map */
