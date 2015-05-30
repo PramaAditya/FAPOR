@@ -149,8 +149,15 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/kontesweb.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    /*background-image: url(../img/kontesweb.jpg);
+    background: no-repeat bottom center scroll;
+    background-color: rgba(0,0,0,0.5);*/
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../img/kontesweb.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -164,6 +171,7 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    line-height: 50px;
 }
 
 .intro .intro-body .intro-text {
