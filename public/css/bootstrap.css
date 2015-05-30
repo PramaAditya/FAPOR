@@ -15338,6 +15338,12 @@ img#logo-footer {
   }
 }
 @font-face {
+  font-family: 'Zapf';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Zapf'), url(fonts/Zapf.ttf) format('ttf');
+}
+@font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -15611,10 +15617,9 @@ blockquote {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  font-family: "Oswald";
+  font-family: "Zapf", Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
   line-height: 30px;
-  font-weight: bold;
   color: #0061ae;
 }
 @media (min-width: 992px) {
@@ -15622,6 +15627,12 @@ blockquote {
     float: left;
     width: 50%;
   }
+}
+#header .kominfo-container h3 .motto {
+  font-size: 19px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  color: #0096da;
 }
 #header .kominfo-container #search {
   position: relative;

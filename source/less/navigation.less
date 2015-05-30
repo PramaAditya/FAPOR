@@ -52,11 +52,19 @@
         h3 {
             padding-top: @baseline/2;
             .make-md-column(6);
-            font-family: "Oswald";
+            font-family: @font-family-serif;
             font-size: 30px;
             line-height: 30px;
-            font-weight: bold;
             color: @brand-primary;
+            .motto{
+                font-size: @font-size-h4;
+                font-family: @font-family-sans-serif;
+                font-style: italic;
+                color: @warna-3;
+                //text-transform: uppercase;
+                //letter-spacing: 1.5px;
+            }
+
         }
         #search {
             .make-md-column(3);
