@@ -2,6 +2,9 @@
     .shortcut-container {
         .make-row(0);
         .shortcut {
+            *{
+                text-decoration: none;
+            }
             text-align: center;
             .make-xs-column(12, 0);
             .make-sm-column(3, 40px);
@@ -9,7 +12,7 @@
             //background-color: red;
             .icon-container {
                 //.pop;
-                @icon-size: 140px;
+                @icon-size: 150px;
                 height: @icon-size;
                 .icon {
                     @media (max-width: screen-sm) {}
