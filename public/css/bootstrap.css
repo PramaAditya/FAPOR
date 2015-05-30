@@ -17506,17 +17506,17 @@ form.signup input.form-control:focus {
   border-color: #fd680e;
 }
 /* wrapper */
-#wrapper {
+.wrapper {
   text-align: center;
   padding: 50px 0;
+  margin-right: auto;
+  margin-left: auto;
   background-attachment: relative;
   background-position: center center;
-  min-height: 650px;
-  width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
-  background-size: 100%;
+  background-size: 120%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17524,7 +17524,7 @@ form.signup input.form-control:focus {
   /* countdown */
   /* footer */
 }
-#wrapper h2.title {
+.wrapper h2.title {
   margin-top: 40px;
   margin-bottom: 40px;
   color: #fff;
@@ -17534,11 +17534,11 @@ form.signup input.form-control:focus {
   letter-spacing: 1.5px;
   text-transform: uppercase!important;
 }
-#wrapper h3.subtitle {
+.wrapper h3.subtitle {
   color: #fff;
   font-size: 24px;
 }
-#wrapper h3.hitung {
+.wrapper h3.hitung {
   color: #fff;
   font-size: 140px;
   padding: 0px;
@@ -17547,7 +17547,7 @@ form.signup input.form-control:focus {
   font-weight: 200;
   line-height: 140px;
 }
-#wrapper p.hitung {
+.wrapper p.hitung {
   padding: 0;
   font-size: 20px;
   color: #fff;
@@ -17556,13 +17556,13 @@ form.signup input.form-control:focus {
   text-transform: uppercase!important;
   letter-spacing: 1.5px;
 }
-#wrapper #countdown {
+.wrapper #countdown {
   font-size: 48px;
   color: #fff;
   line-height: 1.1em;
   margin: 40px 0 60px;
 }
-#wrapper p.copyright {
+.wrapper p.copyright {
   margin-top: 50px;
   color: #fff;
   text-align: center;
@@ -17585,6 +17585,7 @@ div.hitung-mundur {
 .kotakwaktu {
   margin-left: 0;
   margin-right: 0;
+  width: 100%;
 }
 #archive-section {
   padding: 0;
