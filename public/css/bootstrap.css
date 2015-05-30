@@ -16476,6 +16476,25 @@ blockquote {
     margin-bottom: 1.5em!important;
   }
 }
+.tanggal-small {
+  font-weight: 700;
+  font-style: italic;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .tanggal-small {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tanggal-small {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .tanggal-small {
+    display: none !important;
+  }
+}
 @media (max-width: 480px) {
   .content-column.left * {
     padding-left: 15px !important;
