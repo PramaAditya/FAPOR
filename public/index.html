@@ -533,6 +533,26 @@
     e.stopPropagation()
   })
   </script>
+  <div class="news blue">
+    <span>30 Mei 2015</span>
+    <ul>
+      <li>
+        <a href="#">Penyelenggara Jaringan diwajibkan Modifikasi Aplikasi 4444 di Server</a>
+      </li>
+      <li>
+        <a href="#">Kemkominfo, Kaltim dan Kaltara MoU Bangun BTS Diperbatasan
+        </a>
+      </li>
+      <li>
+        <a href="#">Menkominfo Pimpin Upacara Harkitnas Ke-107 di Balikpapan
+        </a>
+      </li>
+      <li>
+        <a href="#">Menkominfo Ajak Kenang Kembali Semangat Perjuangan The Founding Father Bangsa
+        </a>
+      </li>
+    </ul>
+  </div>
   <div id="grid-section" class="section">
     <div class="full-md container">
       <div class="kotak-section">
@@ -854,7 +874,7 @@
         <div class="col-md-6 hidden-sm hidden-xs">
           <div class="twitter-header">
             <h3>Terbaru dari Kominfo</h3></div>
-          <a class="twitter-timeline" href="https://twitter.com/kemkominfo" data-widget-id="602637357460770816" height="475" data-chrome="noborders noheader" theme="dark">Tweets by @kemkominfo</a>
+          <a class="twitter-timeline" href="https://twitter.com/kemkominfo" data-widget-id="602637357460770816" height="625" data-chrome="noborders noheader" theme="dark">Tweets by @kemkominfo</a>
           <script>
           ! function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
@@ -1021,6 +1041,36 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>Selamat Datang!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Website ini adalah karya dari:</p>
+        <ul>
+          <li>Prama Aditya Putra</li>
+          <li>Luthfi Al Fikri</li>
+          <li>Azka Ihsan Nurrahman</li>
+          <li>Rochmah Rochimah</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#myModal').modal('show');
+    });
+</script>
 </body>
 
 </html>

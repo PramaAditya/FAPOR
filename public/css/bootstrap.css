@@ -15033,6 +15033,27 @@ body {
   left: 0;
   right: 0;
 }
+.modal-content {
+  border-radius: 0;
+}
+.modal-content .modal-header {
+  background-color: #0061ae;
+}
+.modal-content .modal-header .modal-title {
+  color: white;
+}
+.modal-content .modal-footer {
+  border: 0px;
+}
+.modal-content .modal-body {
+  padding: 25px;
+}
+.modal-content .modal-body p {
+  margin: 0;
+}
+.modal-content .modal-body ul {
+  padding-left: 25px;
+}
 .glyphicon {
   margin-left: .3em;
   margin-right: .3em;
@@ -16876,23 +16897,20 @@ body {
   height: 100%;
 }
 .news {
-  box-shadow: inset 0 -15px 30px rgba(0, 0, 0, 0.4), 0 5px 10px rgba(0, 0, 0, 0.5);
-  width: 99%;
+  width: 100%;
   height: 30px;
-  margin: 20px auto;
+  margin: 0px;
   overflow: hidden;
-  border-radius: 4px;
-  padding: 2px;
+  padding: 1px;
   -webkit-user-select: none;
 }
 .news span {
   float: left;
   color: #fff;
-  padding: 1px;
+  margin-left: 5px;
+  margin-top: 3px;
   position: center;
-  top: 1%;
   border-radius: 40px;
-  box-shadow: inset 0 -15px 30px rgba(0, 0, 0, 0.4);
   font: 16px 'Source Sans Pro', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-user-select: none;
@@ -16923,10 +16941,7 @@ body {
 }
 /* OTHER COLORS */
 .blue {
-  background: #347fd0;
-}
-.blue span {
-  background: #2c66be;
+  background: #2c2c7c;
 }
 .red {
   background: #d23435;
