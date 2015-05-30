@@ -15,9 +15,9 @@
     .modal-body{
         padding:@baseline;
         p{
-            margin: 0;
+            // margin: 0;
         }
-        ul{
+        ul,ol{
             padding-left: @baseline;
         }
     }
@@ -27,52 +27,6 @@
     margin-left: .3em;
     margin-right: .3em;
 }
-// #title {
-//     background-color: @warna-5;
-//     background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
-//     min-height: 12em;
-//     h1 {
-//         color: white;
-//         margin-top: 1.35em;
-//         margin-bottom: 0.5em;
-//     }
-//     text-align: center;
-// }
-
-
-// .page-tabs {
-//     .make-row();
-//     .container {
-//         .make-xs-column(12);
-//         .nav-tabs {
-//             text-align: center;
-//             border: 0;
-//             > li {
-//                 float: none;
-//                 display: inline-block;
-//                 *display: inline;
-//                  ie7 fix 
-                
-//                 zoom: 1;
-//                 /* hasLayout ie7 trigger */
-                
-//                 a {
-//                     border: 0;
-//                     border-radius: @border-largest-radius @border-smallest-radius 0 @border-smallest-radius;
-//                 }
-//             }
-//             > li:not(.active) {
-//                 a {
-//                     color: white;
-//                     &:hover, &:focus {
-//                         background-color: rgba(255, 255, 255, 0.3);
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
 
 
 @media (max-width: @screen-lg) {
@@ -106,6 +60,10 @@
 #shortcut-section{
     //background-color: green;
     padding-bottom: 4px+@baseline;
+    .icon-container{
+        //.animated;
+        //.rotateIn;
+    }
 }
 
 #latest-section{

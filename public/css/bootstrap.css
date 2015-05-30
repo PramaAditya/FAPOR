@@ -15048,10 +15048,8 @@ body {
 .modal-content .modal-body {
   padding: 25px;
 }
-.modal-content .modal-body p {
-  margin: 0;
-}
-.modal-content .modal-body ul {
+.modal-content .modal-body ul,
+.modal-content .modal-body ol {
   padding-left: 25px;
 }
 .glyphicon {

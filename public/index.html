@@ -15,6 +15,7 @@
   <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/jasny-bootstrap.js"></script>
+  <script type="text/javascript" src="wow.min.js"></script>
   <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <!-- <link href="css/kotak.css" rel="stylesheet" type="text/css"> -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -608,7 +609,7 @@
       <div class="shortcut-container">
         <a href="">
           <div class="shortcut" id="domain">
-            <div class="icon-container">
+            <div class="icon-container wow rotateIn">
               <img class="lingkaran" src="img/icons/png/lingkaran.png"></img>
               <img class="icon-shadow" src="img/icons/png/domain-shad.png"></img>
               <img class="icon-obj" src="img/icons/png/domain.png"></img>
@@ -619,7 +620,7 @@
         </a>
         <a href="">
           <div class="shortcut" id="statistik">
-            <div class="icon-container">
+            <div class="icon-container wow rotateIn">
               <img class="lingkaran" src="img/icons/png/lingkaran.png"></img>
               <img class="icon-shadow" src="img/icons/png/statistik-shad.png"></img>
               <img class="icon-obj" src="img/icons/png/statistik.png"></img>
@@ -630,7 +631,7 @@
         </a>
         <a href="">
           <div class="shortcut" id="tv">
-            <div class="icon-container">
+            <div class="icon-container wow rotateIn">
               <img class="lingkaran" src="img/icons/png/lingkaran.png"></img>
               <img class="icon-shadow" src="img/icons/png/tv-shad.png"></img>
               <img class="icon-obj" src="img/icons/png/tv.png"></img>
@@ -641,7 +642,7 @@
         </a>
         <a href="">
           <div class="shortcut" id="beasiswa">
-            <div class="icon-container">
+            <div class="icon-container wow rotateIn">
               <img class="lingkaran" src="img/icons/png/lingkaran.png"></img>
               <img class="icon-shadow" src="img/icons/png/beasiswa-shad.png"></img>
               <img class="icon-obj" src="img/icons/png/beasiswa.png"></img>
@@ -652,7 +653,7 @@
         </a>
         <a href="">
           <div class="shortcut" id="penelitian">
-            <div class="icon-container">
+            <div class="icon-container wow rotateIn">
               <img class="lingkaran" src="img/icons/png/lingkaran.png"></img>
               <img class="icon-shadow" src="img/icons/png/penelitian-shad.png"></img>
               <img class="icon-obj" src="img/icons/png/penelitian.png"></img>
@@ -663,7 +664,7 @@
         </a>
         <a href="">
           <div class="shortcut" id="regulasi">
-            <div class="icon-container">
+            <div class="icon-container wow rotateIn">
               <img class="lingkaran" src="img/icons/png/lingkaran.png"></img>
               <img class="icon-shadow" src="img/icons/png/regulasi-shad.png"></img>
               <img class="icon-obj" src="img/icons/png/regulasi.png"></img>
@@ -674,7 +675,7 @@
         </a>
         <a href="">
           <div class="shortcut" id="aduan">
-            <div class="icon-container">
+            <div class="icon-container wow rotateIn">
               <img class="lingkaran" src="img/icons/png/lingkaran.png"></img>
               <img class="icon-shadow" src="img/icons/png/aduan-shad.png"></img>
               <img class="icon-obj" src="img/icons/png/aduan.png"></img>
@@ -685,7 +686,7 @@
         </a>
         <a href="">
           <div class="shortcut" id="lelang">
-            <div class="icon-container">
+            <div class="icon-container wow rotateIn">
               <img class="lingkaran" src="img/icons/png/lingkaran.png"></img>
               <img class="icon-shadow" src="img/icons/png/lelang-shad.png"></img>
               <img class="icon-obj" src="img/icons/png/lelang.png"></img>
@@ -814,7 +815,7 @@
                   <h4><a href="kolom-2.html">Rapat Koordinasi Kerja Sama Lintas Daerah Bidang Kominfo Wilayah Indonesia Bagian Timur Tahun 2014</a></h4> Rapat Koordinasi Kerja Sama Lintas Daerah Bidang Kominfo Wilayah Indonesia Bagian Timur Tahun 2014
                 </div>
               </div>
-            </div> 
+            </div>
             <div class="tab-pane" id="siaran">
               <div class="bas-tanggal-container">
                 <div class="bas-tanggal-kotak">
@@ -1041,36 +1042,43 @@
       </div>
     </div>
   </div>
-
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>Selamat Datang!</h4>
-      </div>
-      <div class="modal-body">
-        <p>Website ini adalah karya dari:</p>
-        <ul>
-          <li>Prama Aditya Putra</li>
-          <li>Luthfi Al Fikri</li>
-          <li>Azka Ihsan Nurrahman</li>
-          <li>Rochmah Rochimah</li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Tutup</button>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>Selamat Datang!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Salam sejahtera bagi kita semua, saya berserta rekan kelompok bersyukur telah menyelesaikan pembuatan website dengan lancar. Dengan ini saya sebagai wakil dari team ingin mempresentasikan hasil kerja kami, sebagai berikut :</p>
+          <p>Struktur website ini terbagi dalam 10 halaman, yaitu :</p>
+          <ol>
+            <li>Halaman beranda : Index.html</li>
+            <li>Landing page : Landing.html</li>
+            <li>Halaman kolom 1 : Kolom-1.html</li>
+            <li>Halaman kolom 2 : Kolom-2.html</li>
+            <li>Halaman kolom 3 : Kolom-3.html</li>
+            <li>Halaman Berita : Berita.html</li>
+            <li>Halaman Galeri : Galeri.html</li>
+            <li>Halaman error 500 : Error.html</li>
+            <li>Halaman error 404 : Notfound.html</li>
+            <li>Halaman under construction : Under-cs.html</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Tutup</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <script type="text/javascript">
+  // new WOW().init();
+  $(window).load(function() {
+    $('#myModal').modal('show');
 
-<script type="text/javascript">
-    $(window).load(function(){
-        $('#myModal').modal('show');
-    });
-</script>
+  });
+  </script>
 </body>
 
 </html>
