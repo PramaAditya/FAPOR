@@ -17112,6 +17112,8 @@ fieldset[disabled] .content-column #btn-web-layanan.active {
   padding: 0;
   border: 0;
   border-radius: 0;
+  width: 75px;
+  height: 70px;
 }
 .widget-column .widget-list .w-body {
   position: relative;
