@@ -17876,4 +17876,23 @@ div.hitung-mundur {
 .breadcrumb-section.archive .breadcrumb-container {
   margin-bottom: 0;
 }
+.error-background {
+  min-height: 650px;
+}
+.error-section {
+  background-color: #0096da;
+}
+.error-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.error-actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.tombol {
+  margin-right: 10px;
+  margin-left: 10px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
