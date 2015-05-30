@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 /*imported*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -15033,6 +15033,27 @@ body {
   left: 0;
   right: 0;
 }
+.modal-content {
+  border-radius: 0;
+}
+.modal-content .modal-header {
+  background-color: #0061ae;
+}
+.modal-content .modal-header .modal-title {
+  color: white;
+}
+.modal-content .modal-footer {
+  border: 0px;
+}
+.modal-content .modal-body {
+  padding: 25px;
+}
+.modal-content .modal-body p {
+  margin: 0;
+}
+.modal-content .modal-body ul {
+  padding-left: 25px;
+}
 .glyphicon {
   margin-left: .3em;
   margin-right: .3em;
@@ -17740,5 +17761,4 @@ div.hitung-mundur {
 .breadcrumb-section.archive .breadcrumb-container {
   margin-bottom: 0;
 }
-
 /*# sourceMappingURL=bootstrap.css.map */
