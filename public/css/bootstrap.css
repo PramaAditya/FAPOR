@@ -15775,6 +15775,10 @@ blockquote {
   font-style: italic;
   color: #0096da;
 }
+#header .kominfo-container h3 a:hover {
+  color: #0061ae;
+  text-decoration: none;
+}
 #header .kominfo-container #search {
   position: relative;
   min-height: 1px;
@@ -16378,6 +16382,7 @@ blockquote {
   -moz-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  padding-bottom: 50px;
 }
 .widget-column {
   -webkit-animation-duration: 1s;
