@@ -19,7 +19,9 @@ html {
 
 h1,
 h2,
-h3,
+h3 {
+    margin-top:20px;
+}
 h4,
 h5,
 h6 {
@@ -45,7 +47,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #000;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -147,7 +149,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/kontesweb.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
