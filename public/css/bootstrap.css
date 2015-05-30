@@ -15048,10 +15048,8 @@ body {
 .modal-content .modal-body {
   padding: 25px;
 }
-.modal-content .modal-body p {
-  margin: 0;
-}
-.modal-content .modal-body ul {
+.modal-content .modal-body ul,
+.modal-content .modal-body ol {
   padding-left: 25px;
 }
 .glyphicon {
@@ -16919,7 +16917,7 @@ body {
 .news ul {
   float: left;
   padding-left: 20px;
-  animation: ticker 10s cubic-bezier(1, 0, 0.5, 0) infinite;
+  animation: ticker 20s cubic-bezier(1, 0, 0.5, 0) infinite;
   -webkit-user-select: none;
 }
 .news ul li {
