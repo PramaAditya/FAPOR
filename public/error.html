@@ -528,29 +528,36 @@
     </div>
   </header>
 
-  <div class="section" style="background: url(img/grey.jpg);">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="error-template">
-              <center>
-                  <h1>500 Internal Server Error</h1>
-                  <div class="error-details">
-                      <h4>Maaf, server mengalami kerusakan dan tidak dapat memproses permintaan Anda!</h4>
-                  </div>
-                  <div class="error-actions">
-                  <h1>
-                      <a href="index.html" class="btn btn-primary btn-lg" style="margin-right: 15px"><span class="glyphicon glyphicon-home"></span>
-                          Kembali ke Beranda </a><a href="index.html" class="btn btn-default btn-lg" style="margin-left: 15px"><span class="glyphicon glyphicon-envelope"></span> Kontak Dukungan </a>
-                  </h1>
-                  </div>
-              </center>    
-              </div>
-          </div>
-      </div>
-  </div>
-  </div>
-
+<script type="text/javascript">
+  $(document).on('click', '.yamm .dropdown-menu', function(e) {
+  e.stopPropagation()
+})
+</script>
+ <!-- Taroh kode diantara <body></body> dari Pingendo di sini -->
+<div class="section" style="background: url(img/grey.jpg);">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+            <center>
+            <div class="img-contain">
+                <img src="img/500.png" alt="Error 500" class="img-responsive">
+            </div>    
+                <div class="error-details">
+                    <h4>Maaf, server mengalami kerusakan dan tidak dapat memproses permintaan Anda!</h4>
+                </div>
+                <div class="error-actions">
+                <h1>
+                    <a href="index.html" class="btn btn-primary btn-lg" style="margin-right: 15px"><span class="glyphicon glyphicon-home"></span>
+                        Kembali ke Beranda </a><a href="index.html" class="btn btn-default btn-lg" style="margin-left: 15px"><span class="glyphicon glyphicon-envelope"></span> Kontak Dukungan </a>
+                </h1>
+                </div>
+            </center>    
+            </div>
+        </div>
+    </div>
+</div>
+</div>
   <div class="hidden-xs section" id="footer">
     <div class="container">
       <div class="row">
