@@ -1,8 +1,8 @@
 @charset "UTF-8";
-/*imported*/
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css";
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+/*imported*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -16973,6 +16973,8 @@ fieldset[disabled] .content-column #btn-web-layanan.active {
   padding: 0;
   border: 0;
   border-radius: 0;
+  width: 75px;
+  height: 70px;
 }
 .widget-column .widget-list .w-body {
   position: relative;
@@ -17876,4 +17878,5 @@ div.hitung-mundur {
 .breadcrumb-section.archive .breadcrumb-container {
   margin-bottom: 0;
 }
+
 /*# sourceMappingURL=bootstrap.css.map */
