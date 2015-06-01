@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header id="header">
+  <header id="header">
     <div class="kominfo-container">
       <h3><a href="index.html">Kementerian Komunikasi dan Informatika Republik Indonesia</a>
       <br>
@@ -43,7 +43,7 @@
     </div>
     <div class="navbar yamm">
       <ul class="nav navbar-nav">
-        <li class="menu-link active"><a href="index.html">Beranda</a></li>
+        <li class="menu-link"><a href="index.html">Beranda</a></li>
         <li class="menu-link dropdown yamm">
           <a href="kolom-3.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Profil 
           <span class="caret"></span></a>
@@ -108,7 +108,7 @@
                   </li>
                 </ul>
                 <ul class="col-sm-5 list-unstyled">
-                  <h3 id="to-galeri"><a href="galeri.html">Galeri</a></h3>
+                  <h3 id="to-galeri"><a href="galeri.html"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>Galeri</a></h3>
                   <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -350,7 +350,7 @@
     </ul>
     </div>
   </header>
-  <header id="header-mobile" class="visible-xs-block">
+  <header id="header-mobile" class="visible-sm-block">
     <div class="navbar navbar-default">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-mobile" data-canvas="body">
@@ -360,6 +360,7 @@
           <label>MENU</label>
         </button>
         <img id="logo-kominfo" src="img/logo-kominfo.png">
+        <label class="brand">KOMINFO</label>
       </div>
       <div id="menu-mobile" class="collapse navbar-collapse" role="navigation">
         <ul class="nav  navbar-nav">
@@ -566,7 +567,26 @@
       </div>
     </div>
   </header>
-
+  <div class="news blue">
+    <span>30 Mei 2015</span>
+    <ul>
+      <li>
+        <a href="kolom-2.html">Penyelenggara Jaringan diwajibkan Modifikasi Aplikasi 4444 di Server</a>
+      </li>
+      <li>
+        <a href="kolom-2.html">Kemkominfo, Kaltim dan Kaltara MoU Bangun BTS Diperbatasan
+        </a>
+      </li>
+      <li>
+        <a href="kolom-2.html">Menkominfo Pimpin Upacara Harkitnas Ke-107 di Balikpapan
+        </a>
+      </li>
+      <li>
+        <a href="kolom-2.html">Menkominfo Ajak Kenang Kembali Semangat Perjuangan The Founding Father Bangsa
+        </a>
+      </li>
+    </ul>
+  </div>
   <div class="breadcrumb-section">
     <div class="container">
       <div class="row">
@@ -692,7 +712,6 @@
       </div>
     </div>
   </div>
-  
   <div class="hidden-xs section" id="footer">
     <div class="container">
       <div class="row">
@@ -801,7 +820,9 @@
           <p class="text-left ">Copyright © 2015 Kementerian Teknologi dan Informatika Republik Indonesia</p>
         </div>
         <div id="info-kominfo">
-          <div class="logo"><a href="index.html"><img src="img/logo-kominfo.png" class="img-responsive" id="logo-footer"></a></div>
+          <div class="logo">
+            <a href="index.html"><img src="img/logo-kominfo.png" class="img-responsive" id="logo-footer"></a>
+          </div>
           <a href="https://twitter.com/kemkominfo"><i class="fa fa-fw fa-twitter hub "></i></a>
           <a href="https://id-id.facebook.com/Kemkominfo"><i class="fa fa-facebook fa-fw hub "></i></a>
           <a href="http://kominfo.go.id/index.php/content/rss"><i class="fa fa-fw fa-rss hub "></i></a>
@@ -809,7 +830,6 @@
       </div>
     </div>
   </div>
-
   <script type="text/javascript">
   $(document).on('click', '.yamm .dropdown-menu', function(e) {
     e.stopPropagation()
