@@ -1,11 +1,18 @@
 .section{
 //    background-color:#F2F2F2;//lighten(@warna-3, 40%);
 }
+.twitter-follow-button{
+    border: 0!important;
+    float: right;
+    padding-top: 13px;
+}
 
 #to-galeri{
-    a{.icon-forward;
-    &:hover{
+    a{
+        // .icon-forward;
+    a:hover{
         background: none!important;
+        color: @warna-4;
     }
     }
 }
@@ -99,7 +106,7 @@
 .section{
     padding-top: @baseline;
     padding-bottom: @baseline;
-    .section-name{
+    h1.section-name{
         font-weight: 700;
         margin: 0;
         padding: 0;
@@ -108,6 +115,11 @@
         letter-spacing: -1px;
         text-align: center;
         margin-bottom: @baseline;
+        border-bottom: 1px solid @headings-color;
+        display: inline-block;
+    }
+    &.inline-center{
+        text-align: center;
     }
 }
 #shortcut-section{

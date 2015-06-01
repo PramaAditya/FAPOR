@@ -2,12 +2,22 @@
     #logo-kominfo {
         height: 30px;
         margin-top: 10px;
-        float: right;
-        margin-right: @grid-gutter-width/2;
+        float: left;
+        margin-left: @grid-gutter-width/2;
+    }
+    .brand{
+        margin-left: @grid-gutter-width/2;
+        color: white;
+        font-size: @font-size-h4;
+        padding-top: 10px;
+        line-height: 30px;
+        letter-spacing: 1.5px;
     }
     .prefixed(trasition, all 1s ease-in);
     .navbar {
         background-color: @brand-primary;
+        margin-bottom: 0;
+        border:0;
     }
     .navbar-toggle {
         padding: .2em .3em;
@@ -41,7 +51,7 @@
 
 #header {
     .hidden-xs;
-    .hidden-sm;
+     .hidden-sm;
     position: relative;
     //background-color: @brand-primary;
     height: @baseline*7;
